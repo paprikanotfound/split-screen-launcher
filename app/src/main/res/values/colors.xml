@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Francisco Barroso
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  ~
+  -->
+
+<resources>
+
+
+    <!-- light -->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#E7E7E7</color>
+    <color name="colorAccent">#004d58</color>
+
+    <color name="textColorPrimary">#181818</color>
+    <color name="textColorSecondary">#666666</color>
+    <color name="textColorTertiary">#999999</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundDark">#EBEAEA</color>
+    <color name="colorBackgroundLight">#ECECEC</color>
+
+    <!-- dark -->
+    <color name="colorNightPrimary">#1D1D1D</color>
+    <color name="colorNightPrimaryDark">#1B1B1B</color>
+    <color name="colorNightAccent">#00838f</color>
+
+    <color name="textNightColorPrimary">#FFFFFF</color>
+    <color name="textNightColorSecondary">#E2E2E2</color>
+    <color name="textNightColorTertiary">#BEBEBE</color>
+
+    <color name="colorNightBackground">#1D1D1D</color>
+    <color name="colorNightBackgroundDark">#0F0F0F</color>
+    <color name="colorNightBackgroundLight">#363636</color>
+
+    <!-- black -->
+    <color name="colorBlackBackgroundDark">#1A1A1A</color>
+
+
+</resources>

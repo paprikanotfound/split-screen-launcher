@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Francisco Barroso
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  ~
+  -->
+
+<resources>
+
+    <string translatable="false" name="license_apache2">Apache License 2.0</string>
+    <string translatable="false" name="license_bsd">BSD License</string>
+    <string translatable="false" name="license_sil">SIL Open Font License 1.1</string>
+
+
+    <string translatable="false" name="ol_dialogs_title">Material Dialogs — Aidan Follestad</string>
+    <string translatable="false" name="ol_dialogs_url">https://github.com/afollestad/material-dialogs</string>
+
+    <string translatable="false" name="ol_theme_title">Aesthetic — Aidan Follestad</string>
+    <string translatable="false" name="ol_theme_url">https://github.com/afollestad/aesthetic</string>
+
+    <string translatable="false" name="ol_google_icons_title">Google Material Design Icons</string>
+    <string translatable="false" name="ol_google_icons_url">https://material.io/tools/icons/</string>
+
+    <string translatable="false" name="ol_autodispose_title">AutoDispose — Uber Technologies</string>
+    <string translatable="false" name="ol_autodispose_url">https://github.com/uber/AutoDispose</string>
+
+    <string translatable="false" name="ol_inlineactivityresult_title">Inline Activity Result — Aidan Follestad</string>
+    <string translatable="false" name="ol_inlineactivityresult_url">https://github.com/afollestad/inline-activity-result</string>
+
+
+    <string-array name="library_titles">
+        <item>@string/ol_dialogs_title</item>
+        <item>@string/ol_theme_title</item>
+        <item>@string/ol_google_icons_title</item>
+        <item>@string/ol_autodispose_title</item>
+        <item>@string/ol_inlineactivityresult_title</item>
+    </string-array>
+
+    <string-array name="library_licenses">
+        <item>@string/license_apache2</item>
+        <item>@string/license_apache2</item>
+        <item>@string/license_apache2</item>
+        <item>@string/license_apache2</item>
+        <item>@string/license_apache2</item>
+    </string-array>
+
+    <string-array name="library_urls">
+        <item>@string/ol_dialogs_url</item>
+        <item>@string/ol_theme_url</item>
+        <item>@string/ol_google_icons_url</item>
+        <item>@string/ol_autodispose_url</item>
+        <item>@string/ol_inlineactivityresult_url</item>
+    </string-array>
+
+</resources>

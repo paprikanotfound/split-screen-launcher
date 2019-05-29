@@ -1,0 +1,113 @@
+<!--
+  ~ Copyright (c) Francisco Barroso
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  ~
+  -->
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <item name="themeId">0</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="md_corner_radius">8dp</item>
+        <item name="md_color_button_text">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorTertiary">@color/textColorTertiary</item>
+
+        <item name="toolbarTitleColor">@color/textColorPrimary</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorBackgroundLight">@color/colorBackgroundLight</item>
+        <item name="colorBackgroundDark">@color/colorBackgroundDark</item>
+
+        <item name="snackbarButtonStyle">@style/AppSnackbar</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents">
+
+        <item name="themeId">1</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="md_corner_radius">8dp</item>
+        <item name="md_color_button_text">@color/colorNightAccent</item>
+
+        <item name="android:textColorPrimary">@color/textNightColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textNightColorSecondary</item>
+        <item name="android:textColorTertiary">@color/textNightColorTertiary</item>
+
+        <item name="toolbarTitleColor">@color/textNightColorPrimary</item>
+
+        <item name="colorAccent">@color/colorNightAccent</item>
+        <item name="colorPrimary">@color/colorNightPrimary</item>
+        <item name="colorPrimaryDark">@color/colorNightPrimaryDark</item>
+        <item name="colorBackgroundLight">@color/colorNightBackgroundLight</item>
+        <item name="colorBackgroundDark">@color/colorNightBackgroundDark</item>
+
+        <item name="snackbarButtonStyle">@style/AppSnackbar</item>
+    </style>
+
+    <style name="AppTheme.Black" parent="AppTheme.Dark">
+
+        <item name="themeId">2</item>
+
+        <item name="colorBackgroundDark">@color/colorBlackBackgroundDark</item>
+
+    </style>
+
+    <style name="AppTheme.Overlay" parent="AppTheme">
+
+        <item name="md_corner_radius">8dp</item>
+        <item name="md_color_button_text">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+    <!-- toolbar title -->
+    <style name="AppTheme.TextAppearance.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/cabin_bold</item>
+        <item name="android:fontFamily">@font/cabin_bold</item>
+        <item name="android:textColor">?toolbarTitleColor</item>
+    </style>
+
+    <!-- Fix: snackbar action tint color -->
+    <style name="AppSnackbar" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+
+</resources>
