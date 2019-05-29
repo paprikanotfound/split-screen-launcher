@@ -2,13 +2,9 @@
 
 Create app shortcuts on the homescreen to launch two apps directly in split screen mode. The app uses the Android Accessibility API to trigger the split screen mode.
 
-<br>
-
 ### Download
 
-[Play Store](https://play.google.com/store/apps/details?id=com.fb.splitscreenlauncher)
-
-<br>
+[Play Store](https://play.google.com/store/apps/details?id=com.fb.splitscreenlauncher){:target="_blank"}
 
 ### License
 
