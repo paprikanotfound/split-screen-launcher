@@ -36,7 +36,7 @@
                 android:icon="@drawable/ic_app_shortcut"
                 android:name=".ActivityShortcut"
                 android:theme="@style/AppTheme.Overlay"
-                android:label="" >
+                android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT"/>
             </intent-filter>
