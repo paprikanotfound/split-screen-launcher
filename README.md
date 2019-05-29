@@ -4,7 +4,7 @@ Create app shortcuts on the homescreen to launch two apps directly in split scre
 
 ### Download
 
-[Play Store](https://play.google.com/store/apps/details?id=com.fb.splitscreenlauncher){:target="_blank"}
+[Play Store](https://play.google.com/store/apps/details?id=com.fb.splitscreenlauncher)
 
 ### License
 
