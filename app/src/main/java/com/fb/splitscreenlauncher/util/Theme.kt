@@ -15,13 +15,14 @@
  *
  */
 
-package com.fb.splitscreenlauncher
+package com.fb.splitscreenlauncher.util
 
 import android.graphics.Color
 import com.afollestad.aesthetic.Aesthetic
 import com.afollestad.aesthetic.AutoSwitchMode
 import com.afollestad.aesthetic.BottomNavBgMode
 import com.afollestad.aesthetic.BottomNavIconTextMode
+import com.fb.splitscreenlauncher.R
 
 
 class Theme {

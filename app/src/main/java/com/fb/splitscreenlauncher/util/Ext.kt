@@ -15,9 +15,8 @@
  *
  */
 
-package com.fb.splitscreenlauncher
+package com.fb.splitscreenlauncher.util
 
-import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageInfo
@@ -30,31 +29,16 @@ import android.net.Uri
 import android.util.Log
 import android.widget.Toast
 import io.reactivex.subjects.BehaviorSubject
-import android.opengl.ETC1.getHeight
-import android.opengl.ETC1.getWidth
-import android.os.Handler
 import android.provider.Settings
 import android.util.TypedValue
 import androidx.annotation.AttrRes
-import androidx.constraintlayout.solver.widgets.WidgetContainer.getBounds
-import androidx.core.os.postDelayed
+import com.fb.splitscreenlauncher.ServiceAccessibility
 
-
-class LiveVar<T>(defaultValue: T) {
-
-    var value: T = defaultValue
-        set(value) {
-            field = value
-            observable.onNext(value)
-        }
-
-    val observable = BehaviorSubject.createDefault<T>(value)
-
-}
 
 
 // context
 
+@Suppress("UNUSED_PARAMETER")
 fun Context.toast(text: String? = null, res: Int = 0, length: Int = Toast.LENGTH_LONG) {
     Toast.makeText(this, text ?: getString(res), Toast.LENGTH_SHORT).show()
 }
@@ -119,6 +103,29 @@ fun Drawable.asBitmap(): Bitmap {
 }
 
 
+// Bitmap
+
+fun Bitmap.scale(maxWidthAndHeight: Int): Bitmap {
+
+    val newWidth: Int
+    val newHeight: Int
+
+    if (this.width >= this.height) {
+        val ratio:Float = this.width.toFloat() / this.height.toFloat()
+        newWidth = maxWidthAndHeight
+        newHeight = Math.round(maxWidthAndHeight / ratio)
+    } else {
+        val ratio:Float = this.height.toFloat() / this.width.toFloat()
+        newWidth = Math.round(maxWidthAndHeight / ratio)
+        newHeight = maxWidthAndHeight
+    }
+
+    return Bitmap.createScaledBitmap(this, newWidth, newHeight, false)
+}
+
+fun Bitmap.asDrawable(res: Resources): BitmapDrawable = BitmapDrawable(res,this)
+
+
 // string
 
 fun String.ld(tag: String = "debug") { Log.d(tag, this) }
@@ -128,7 +135,7 @@ fun String.ld(tag: String = "debug") { Log.d(tag, this) }
 
 val density: Float = Resources.getSystem().displayMetrics.density
 
-val Int.pixel: Int
+val Int.dpiToPx: Int
     get() = Math.round(this * density)
 
 val Double.pixel: Double

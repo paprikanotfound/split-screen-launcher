@@ -15,32 +15,54 @@
  *
  */
 
-package com.fb.splitscreenlauncher
+package com.fb.splitscreenlauncher.ui.main
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import com.afollestad.aesthetic.Aesthetic
 import com.afollestad.aesthetic.AestheticActivity
 import com.afollestad.materialdialogs.MaterialDialog
+import com.fb.splitscreenlauncher.R
+import com.fb.splitscreenlauncher.databinding.ActMainBinding
+import com.fb.splitscreenlauncher.ui.CreateShortcutDialog
+import com.fb.splitscreenlauncher.ui.base.BaseActivity
+import com.fb.splitscreenlauncher.ui.settings.SettingsActivity
+import com.fb.splitscreenlauncher.util.Theme
+import com.fb.splitscreenlauncher.util.versionName
 import com.uber.autodispose.AutoDispose
 import com.uber.autodispose.android.lifecycle.AndroidLifecycleScopeProvider
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.layout_toolbar.*
+import kotlinx.android.synthetic.main.act_main.*
 
 
-class ActivityMain : AestheticActivity() {
+class MainActivity: BaseActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (Aesthetic.isFirstTime) Theme.set(Theme.THEME_LIGHT)
+        val model = ViewModelProviders.of(this).get(MainViewModel::class.java)
+        model.tapActions.observe(this, androidx.lifecycle.Observer {
+            it.handle { id ->
+                when (id) {
+                    R.id.fab -> CreateShortcutDialog.show(this)
+                }
+            }
+        })
 
-        setContentView(R.layout.activity_main)
+        DataBindingUtil
+            .setContentView<ActMainBinding>(this, R.layout.act_main)
+            .apply {
+                lifecycleOwner = this@MainActivity
+                viewModel = model
+            }
+
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { showCreateShortcutDialog() }
+        if (Aesthetic.isFirstTime) Theme.set(Theme.THEME_LIGHT)
+
     }
 
 
@@ -69,16 +91,14 @@ class ActivityMain : AestheticActivity() {
             }
             R.id.action_licenses -> {
 
-                ActivitySettings.launch(this, ActivitySettings.PAGE_LICENSES)
+                SettingsActivity.launch(this, SettingsActivity.PAGE_LICENSES)
 
                 true
             }
             R.id.action_about -> {
 
                 MaterialDialog(this).show {
-                    title(
-                        text = "${getString(R.string.app_name)} ${this@ActivityMain.versionName()}"
-                    )
+                    title(text = "${getString(R.string.app_name)} ${this@MainActivity.versionName()}")
                     message(R.string.dialog_about_body) {
                         html()
                         lineSpacing(1.2f)

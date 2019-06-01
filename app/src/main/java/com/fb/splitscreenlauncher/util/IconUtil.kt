@@ -15,7 +15,7 @@
  *
  */
 
-package com.fb.splitscreenlauncher
+package com.fb.splitscreenlauncher.util
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -23,7 +23,7 @@ import android.graphics.Rect
 import android.graphics.drawable.Drawable
 
 
-class IconHelper {
+class IconUtil {
 
     companion object {
 
@@ -33,20 +33,20 @@ class IconHelper {
         fun getIcon(style: Int = STACKED, iconFirst: Drawable?, iconSecond: Drawable?): Bitmap? {
             return when (style) {
                 SPLIT -> null
-                else -> Bitmap.createBitmap(56.pixel, 56.pixel, Bitmap.Config.ARGB_8888).also {
+                else -> Bitmap.createBitmap(56.dpiToPx, 56.dpiToPx, Bitmap.Config.ARGB_8888).also {
 
                     val canvas = Canvas(it)
 
                     iconFirst?.apply {
                         val tempBounds = copyBounds()
-                        bounds = Rect(0, 0, 36.pixel, 36.pixel)
+                        bounds = Rect(0, 0, 36.dpiToPx, 36.dpiToPx)
                         draw(canvas)
                         bounds = tempBounds
                     }
 
                     iconSecond?.mutate()?.apply {
                         val tempBounds = copyBounds()
-                        bounds = Rect(0, 0, 36.pixel, 36.pixel).apply { offset(20.pixel, 20.pixel) }
+                        bounds = Rect(0, 0, 36.dpiToPx, 36.dpiToPx).apply { offset(20.dpiToPx, 20.dpiToPx) }
                         draw(canvas)
                         bounds = tempBounds
                     }

@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".ActivityMain">
+        tools:context=".ui.main.MainActivity">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/edit_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:hint=""
                 android:layout_gravity="center_horizontal"

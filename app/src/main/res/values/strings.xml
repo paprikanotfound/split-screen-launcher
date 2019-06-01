@@ -34,13 +34,12 @@
 
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_licenses">Open-source licenses</string>
-    <string name="title_activity_app_picker">Tap to select the app</string>
+    <string name="title_activity_app_picker">Tap to pick an app</string>
 
     <string name="warning_same_app_shortcut">Launching the same app is not supported</string>
-    <string name="warning_app_not_supported">Some apps do not support multi window thus the shortcut will not work with these</string>
 
-    <string name="msg_start_indicator">Hi! Tap the button bellow to create a shortcut on your home screen to launch two apps in split screen mode.
-        \n\nNotice that some apps do not support multi window thus will not work  :(</string>
+    <string name="msg_start_indicator">Tap the button bellow to create a shortcut on your home screen to launch two apps in split screen mode.
+        \n\nNotice that some apps do not support multi window and thus split screen mode will not work</string>
 
     <string name="dialog_new_title">New shortcut</string>
     <string name="dialog_new_label_hint">(Shortcut label)</string>
@@ -49,9 +48,12 @@
     <string name="dialog_new_switch_pos">Swap</string>
     <string name="dialog_new_save_min_apps">Select two applications to create a shortcut!</string>
 
+    <!-- Shortcut activity -->
     <string name="dialog_accessibility_title">Accessibility required</string>
     <string name="dialog_accessibility_msg">Enable the accessibility service required to launch the apps in split screen mode</string>
     <string name="dialog_accessibility_confirm">Enable</string>
+
+    <string name="error_launch_accessibility">Error opening accessibility settings!</string>
 
 
     <!-- Accessibility-->

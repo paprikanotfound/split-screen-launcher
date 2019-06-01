@@ -22,24 +22,22 @@ import android.accessibilityservice.AccessibilityServiceInfo
 import android.app.PendingIntent
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityWindowInfo
 import androidx.annotation.CallSuper
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ServiceLifecycleDispatcher
+import com.fb.splitscreenlauncher.ui.base.Parameters
+import com.fb.splitscreenlauncher.util.LiveVar
 import com.uber.autodispose.AutoDispose
 import com.uber.autodispose.android.lifecycle.AndroidLifecycleScopeProvider
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 
 
 class ServiceAccessibility : AccessibilityServiceExt() {
 
-
+    private var jobExpireLaunch: Job? = null
     private var launchState = LiveVar(0)
     private var intents : Pair<Intent, Intent>? = null
 
@@ -51,8 +49,6 @@ class ServiceAccessibility : AccessibilityServiceExt() {
             .distinctUntilChanged()
             .`as`(AutoDispose.autoDisposable(AndroidLifecycleScopeProvider.from(this)))
             .subscribe { state ->
-
-                // Service info
 
                 serviceInfo = serviceInfo?.apply {
                     eventTypes =  when {
@@ -67,9 +63,10 @@ class ServiceAccessibility : AccessibilityServiceExt() {
                     notificationTimeout = 200
                 }
 
-                // Clear launch intents
-
-                 if (state == 0) intents = null
+                 if (state == 0) {
+                     jobExpireLaunch?.cancel()
+                     intents = null
+                 }
 
             }
 
@@ -96,7 +93,7 @@ class ServiceAccessibility : AccessibilityServiceExt() {
 
                 // Expire launch after 4 seconds
 
-                CoroutineScope(Dispatchers.Default).launch {
+                jobExpireLaunch = CoroutineScope(Dispatchers.Default).launch {
                     delay(4000)
                     launchState.value = 0
                 }
@@ -155,17 +152,8 @@ abstract class AccessibilityServiceExt: AccessibilityService(), LifecycleOwner {
     }
 
     @CallSuper
-    override fun onStart(intent: Intent, startId: Int) {
-        mDispatcher.onServicePreSuperOnStart()
-        super.onStart(intent, startId)
-    }
-
-    // this method is added only to annotate it with @CallSuper.
-    // In usual service super.onStartCommand is no-op, but in LifecycleService
-    // it results in mDispatcher.onServicePreSuperOnStart() call, because
-    // super.onStartCommand calls onStart().
-    @CallSuper
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        mDispatcher.onServicePreSuperOnStart()
         return super.onStartCommand(intent, flags, startId)
     }
 

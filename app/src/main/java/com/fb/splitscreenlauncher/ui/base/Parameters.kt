@@ -15,20 +15,30 @@
  *
  */
 
-package com.fb.splitscreenlauncher
+package com.fb.splitscreenlauncher.ui.base
 
-import org.junit.Test
+class Parameters {
 
-import org.junit.Assert.*
+    companion object {
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
-class ExampleUnitTest {
-    @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        // settings activity
+
+        const val PAGE_ID = "page"
+
+        // app picker fragment
+
+        const val RESULT_APP_PICK = "result_app_pick"
+
+        // create shortcut dialog
+
+        const val FIRST = "first"
+        const val SECOND = "second"
+
+        const val FINISH_DISMISS = "finish_on_dismiss"
+        const val REQUEST_PINNED_SHORTCUT = "request_pin_shortcut"
+
+
+
     }
+
 }
