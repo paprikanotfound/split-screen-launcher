@@ -37,6 +37,15 @@ import kotlinx.coroutines.*
 
 class ServiceAccessibility : AccessibilityServiceExt() {
 
+    companion object {
+
+        const val STATE_PAUSED = 0
+        const val STATE_TRIGGER_SPLITSCREEN = 1
+        const val STATE_LAUNCH_BOTTOM_APP = 2
+
+    }
+
+
     private var jobExpireLaunch: Job? = null
     private var launchState = LiveVar(0)
     private var intents : Pair<Intent, Intent>? = null
@@ -52,18 +61,20 @@ class ServiceAccessibility : AccessibilityServiceExt() {
 
                 serviceInfo = serviceInfo?.apply {
                     eventTypes =  when {
-                        state > 0 -> AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED or AccessibilityEvent.TYPE_WINDOWS_CHANGED
+                        state != STATE_PAUSED ->
+                            AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED or AccessibilityEvent.TYPE_WINDOWS_CHANGED
                         else -> 0
                     }
                     feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC
                     flags = when {
-                        state > 0 -> AccessibilityServiceInfo.FLAG_RETRIEVE_INTERACTIVE_WINDOWS
+                        state != STATE_PAUSED ->
+                            AccessibilityServiceInfo.FLAG_RETRIEVE_INTERACTIVE_WINDOWS
                         else -> 0
                     }
                     notificationTimeout = 200
                 }
 
-                 if (state == 0) {
+                 if (state == STATE_PAUSED) {
                      jobExpireLaunch?.cancel()
                      intents = null
                  }
@@ -85,7 +96,7 @@ class ServiceAccessibility : AccessibilityServiceExt() {
             if (first != null && second != null) {
 
                 intents = first to second
-                launchState.value = 1
+                launchState.value = STATE_TRIGGER_SPLITSCREEN
 
 
                 PendingIntent
@@ -95,7 +106,7 @@ class ServiceAccessibility : AccessibilityServiceExt() {
 
                 jobExpireLaunch = CoroutineScope(Dispatchers.Default).launch {
                     delay(4000)
-                    launchState.value = 0
+                    launchState.value = STATE_PAUSED
                 }
 
             }
@@ -107,31 +118,33 @@ class ServiceAccessibility : AccessibilityServiceExt() {
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
         intents?.also { shortcut ->
             when (launchState.value) {
-                1 -> {
-
+                STATE_TRIGGER_SPLITSCREEN -> {
                     if (event?.packageName == shortcut.first.`package`) {
 
                         performGlobalAction(GLOBAL_ACTION_TOGGLE_SPLIT_SCREEN)
 
-                        launchState.value = 2
+                        launchState.value = STATE_LAUNCH_BOTTOM_APP
 
                     }
                 }
-                2 -> {
+                STATE_LAUNCH_BOTTOM_APP -> {
 
-                    if (event?.packageName != shortcut.second.`package`
-                        && windows.firstOrNull { it.type == AccessibilityWindowInfo.TYPE_SPLIT_SCREEN_DIVIDER } != null) {
+                    val isSplitScreenUIVisible: Boolean = event?.packageName != shortcut.second.`package` &&
+                            windows.firstOrNull { it.type == AccessibilityWindowInfo.TYPE_SPLIT_SCREEN_DIVIDER } != null
 
-                        PendingIntent
-                            .getActivity(baseContext, 0, shortcut.second, PendingIntent.FLAG_ONE_SHOT, null)
-                            .send()
+                    val eventIsFromSecondActivity = event?.packageName == shortcut.second.`package`
 
+                    when {
+                        isSplitScreenUIVisible -> {
 
-                    } else if (event?.packageName == shortcut.second.`package`) {
+                            PendingIntent
+                                .getActivity(baseContext, 0, shortcut.second, PendingIntent.FLAG_ONE_SHOT, null)
+                                .send()
 
-                        launchState.value = 0
-
+                        }
+                        eventIsFromSecondActivity -> { launchState.value = STATE_PAUSED }
                     }
+
                 }
             }
         }
