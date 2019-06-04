@@ -21,18 +21,30 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.afollestad.aesthetic.Aesthetic
-import com.afollestad.aesthetic.AestheticActivity
+import com.fb.splitscreenlauncher.util.Theme
+
+
+class ResultHandler(val callback: (requestCode: Int, resultCode: Int, data: Intent?) -> Unit) {
+
+    fun invoke(requestCode: Int, resultCode: Int, data: Intent?) = callback.invoke(requestCode, resultCode, data)
+
+}
 
 
 abstract class BaseActivity: AppCompatActivity() {
 
-    var resultReceiver: Pair<Int, ((resultCode: Int, data: Intent?) -> Unit)>? = null
+    var resultReceiver: Pair<Int, ResultHandler>? = null
 
     open val useAesthetic: Boolean = true
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        if (useAesthetic) Aesthetic.attach(this)
+        if (useAesthetic) {
+
+            Aesthetic.attach(this)
+
+            if (Aesthetic.isFirstTime) Theme.set(Theme.THEME_LIGHT)
+        }
         super.onCreate(savedInstanceState)
     }
 
@@ -50,7 +62,7 @@ abstract class BaseActivity: AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, result)
 
         if (resultReceiver?.first == requestCode) {
-            resultReceiver?.second?.invoke(resultCode, result)
+            resultReceiver?.second?.callback?.invoke(requestCode, resultCode, result)
             resultReceiver = null
         }
 

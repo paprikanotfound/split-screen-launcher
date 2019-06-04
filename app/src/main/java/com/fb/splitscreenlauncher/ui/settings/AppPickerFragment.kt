@@ -15,7 +15,7 @@
  *
  */
 
-package com.fb.splitscreenlauncher.ui.settings.fragments
+package com.fb.splitscreenlauncher.ui.settings
 
 import android.content.Intent
 import android.content.pm.ResolveInfo
@@ -26,17 +26,13 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.ui.base.Parameters
-import com.fb.splitscreenlauncher.ui.settings.SettingsActivity
 import com.fb.splitscreenlauncher.util.asBitmap
 import com.fb.splitscreenlauncher.util.asDrawable
 import com.fb.splitscreenlauncher.util.dpiToPx
 import com.fb.splitscreenlauncher.util.scale
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import java.util.*
 import kotlin.coroutines.resume
-import kotlin.coroutines.suspendCoroutine
 
 
 class AppPickerFragment : PreferenceFragmentCompat() {
@@ -98,7 +94,7 @@ class AppPickerFragment : PreferenceFragmentCompat() {
     }
 
 
-    private suspend fun getApps() = suspendCoroutine<MutableList<ResolveInfo>> {
+    private suspend fun getApps() = suspendCancellableCoroutine<MutableList<ResolveInfo>> {
 
         val pm = requireContext().packageManager
         val mainIntent = Intent(Intent.ACTION_MAIN, null).addCategory(Intent.CATEGORY_LAUNCHER)

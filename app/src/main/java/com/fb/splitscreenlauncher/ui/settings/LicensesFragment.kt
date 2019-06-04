@@ -15,7 +15,7 @@
  *
  */
 
-package com.fb.splitscreenlauncher.ui.settings.fragments
+package com.fb.splitscreenlauncher.ui.settings
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -55,8 +55,6 @@ class LicensesFragment : PreferenceFragmentCompat() {
             titles.forEachIndexed { index, _ ->
 
                 val pref = Preference(context).apply {
-                    layoutResource =
-                        R.layout.layout_preference_material_small_icon // Make icons a bit smaller
                     title = titles[index]
                     summary = licences[index]
                     isIconSpaceReserved = false

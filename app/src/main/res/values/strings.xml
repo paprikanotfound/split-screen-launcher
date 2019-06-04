@@ -36,6 +36,8 @@
     <string name="title_activity_licenses">Open-source licenses</string>
     <string name="title_activity_app_picker">Tap to pick an app</string>
 
+    <string name="error_result_app_picker">Error occurred!</string>
+
     <string name="warning_same_app_shortcut">Launching the same app is not supported</string>
 
     <string name="msg_start_indicator">Tap the button bellow to create a shortcut on your home screen to launch two apps in split screen mode.
@@ -68,6 +70,8 @@
         <br/><br/>
         This app is open source and available on
         <a href=\'https://github.com/stavangr/SplitScreenLauncher\'>GitHub</a> under Apache 2.0 license.
+        <br/><br/>
+        Version: %1$s
     ]]></string>
 
 

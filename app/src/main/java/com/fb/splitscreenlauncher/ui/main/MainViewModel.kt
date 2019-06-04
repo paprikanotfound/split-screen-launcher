@@ -17,24 +17,20 @@
 
 package com.fb.splitscreenlauncher.ui.main
 
-import android.app.Application
-import android.content.Intent
-import android.graphics.drawable.Drawable
-import androidx.databinding.Bindable
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.afollestad.aesthetic.Aesthetic
 import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.ui.base.Event
-import com.fb.splitscreenlauncher.util.ld
 
 
-data class ShortcutModel(val intentTop: Intent, val intentBottom: Intent, val icon: Drawable)
+class MainViewModel : ViewModel() {
 
+    val tapEvents = MutableLiveData<Event<Int>>()
 
-class MainViewModel(app: Application) : AndroidViewModel(app) {
+    val themeIsDark
+        get() = Aesthetic.get().isDark
 
-    val tapActions = MutableLiveData<Event<Int>>()
-
-    fun onTapMainFab() { tapActions.value = Event(R.id.fab) }
+    fun onTapMainFab() { tapEvents.value = Event(R.id.fab) }
 
 }

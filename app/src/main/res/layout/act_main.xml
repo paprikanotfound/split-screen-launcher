@@ -23,7 +23,9 @@
         tools:context=".ui.main.MainActivity">
 
     <data>
+
         <variable name="viewModel" type="com.fb.splitscreenlauncher.ui.main.MainViewModel" />
+
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

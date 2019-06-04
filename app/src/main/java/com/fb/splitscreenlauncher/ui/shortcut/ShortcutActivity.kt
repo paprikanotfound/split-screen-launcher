@@ -20,14 +20,12 @@ package com.fb.splitscreenlauncher.ui.shortcut
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
-import android.view.View
-import android.view.ViewGroup
 import android.widget.FrameLayout
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.callbacks.onDismiss
 import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.ServiceAccessibility
-import com.fb.splitscreenlauncher.ui.CreateShortcutDialog
+import com.fb.splitscreenlauncher.ui.shortcut.dialog.ShortcutDialog
 import com.fb.splitscreenlauncher.ui.base.BaseActivity
 import com.fb.splitscreenlauncher.ui.base.Parameters
 import com.fb.splitscreenlauncher.util.isAccessibilityEnabled
@@ -42,15 +40,15 @@ class ShortcutActivity: BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(FrameLayout(baseContext))
 
         when {
             intent?.action == Intent.ACTION_CREATE_SHORTCUT -> {
 
-                CreateShortcutDialog.show(this, Bundle().apply {
-                    putBoolean(Parameters.FINISH_DISMISS, true)
-                    putBoolean(Parameters.REQUEST_PINNED_SHORTCUT, false)
-                })
+                ShortcutDialog.show(this,
+                    Bundle().apply {
+                        putBoolean(Parameters.REQUEST_PINNED_SHORTCUT, false)
+                        putBoolean(Parameters.FINISH_PARENT_AFTER_DISMISS, true)
+                    })
 
             }
             !isAccessibilityEnabled() -> {

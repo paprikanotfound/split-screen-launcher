@@ -34,8 +34,11 @@ class Parameters {
         const val FIRST = "first"
         const val SECOND = "second"
 
-        const val FINISH_DISMISS = "finish_on_dismiss"
+        const val FINISH_PARENT_AFTER_DISMISS = "finish_on_dismiss"
         const val REQUEST_PINNED_SHORTCUT = "request_pin_shortcut"
+
+        const val RESULT_SHORTCUT_INTENT = "result_intent"
+        const val RESULT_ERROR_CODE = "error_code"
 
 
 

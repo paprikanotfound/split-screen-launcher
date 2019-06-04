@@ -35,16 +35,12 @@
     <string translatable="false" name="ol_autodispose_title">AutoDispose — Uber Technologies</string>
     <string translatable="false" name="ol_autodispose_url">https://github.com/uber/AutoDispose</string>
 
-    <string translatable="false" name="ol_inlineactivityresult_title">Inline Activity Result — Aidan Follestad</string>
-    <string translatable="false" name="ol_inlineactivityresult_url">https://github.com/afollestad/inline-activity-result</string>
-
 
     <string-array name="library_titles">
         <item>@string/ol_dialogs_title</item>
         <item>@string/ol_theme_title</item>
         <item>@string/ol_google_icons_title</item>
         <item>@string/ol_autodispose_title</item>
-        <item>@string/ol_inlineactivityresult_title</item>
     </string-array>
 
     <string-array name="library_licenses">
@@ -60,7 +56,6 @@
         <item>@string/ol_theme_url</item>
         <item>@string/ol_google_icons_url</item>
         <item>@string/ol_autodispose_url</item>
-        <item>@string/ol_inlineactivityresult_url</item>
     </string-array>
 
 </resources>

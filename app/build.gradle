@@ -57,13 +57,14 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    testImplementation("androidx.test:runner:1.1.0")
-    testImplementation("androidx.test.ext:junit:1.0.0")
-    testImplementation("androidx.test.espresso:espresso-intents:3.1.0")
-    testImplementation("androidx.test.espresso:espresso-core:3.1.0")
-    testImplementation("androidx.test.ext:truth:1.0.0")
-    testImplementation ("org.robolectric:robolectric:4.0")
-    
+    testImplementation "androidx.test.ext:junit:1.1.1"
+    testImplementation "androidx.test:runner:1.2.0"
+    testImplementation "androidx.test.ext:junit:1.1.1"
+    testImplementation "androidx.test.ext:truth:1.2.0"
+    testImplementation "androidx.test:rules:1.1.1"
+    testImplementation "org.robolectric:robolectric:4.3"
+    testImplementation 'org.mockito:mockito-all:1.10.19'
+
     implementation 'com.uber.autodispose:autodispose-android-archcomponents:1.2.0'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'

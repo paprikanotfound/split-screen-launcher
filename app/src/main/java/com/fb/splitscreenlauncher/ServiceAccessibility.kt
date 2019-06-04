@@ -87,11 +87,11 @@ class ServiceAccessibility : AccessibilityServiceExt() {
                 intents = first to second
                 launchState.value = 1
 
+
                 PendingIntent
-                    .getActivity(baseContext, 0, first, PendingIntent.FLAG_ONE_SHOT, Bundle()).send()
+                    .getActivity(baseContext, 0, first, PendingIntent.FLAG_ONE_SHOT, Bundle())
+                    .send()
 
-
-                // Expire launch after 4 seconds
 
                 jobExpireLaunch = CoroutineScope(Dispatchers.Default).launch {
                     delay(4000)
@@ -145,20 +145,17 @@ abstract class AccessibilityServiceExt: AccessibilityService(), LifecycleOwner {
 
     private val mDispatcher = ServiceLifecycleDispatcher(this)
 
-    @CallSuper
-    override fun onCreate() {
+    @CallSuper override fun onCreate() {
         mDispatcher.onServicePreSuperOnCreate()
         super.onCreate()
     }
 
-    @CallSuper
-    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+    @CallSuper override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         mDispatcher.onServicePreSuperOnStart()
         return super.onStartCommand(intent, flags, startId)
     }
 
-    @CallSuper
-    override fun onDestroy() {
+    @CallSuper override fun onDestroy() {
         mDispatcher.onServicePreSuperOnDestroy()
         super.onDestroy()
     }

@@ -62,7 +62,6 @@ class Theme {
                         snackbarBackgroundColorDefault()
                         snackbarTextColorDefault()
 
-
                     }
                     THEME_DARK -> {
 

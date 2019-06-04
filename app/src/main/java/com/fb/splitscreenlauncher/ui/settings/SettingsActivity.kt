@@ -27,8 +27,7 @@ import androidx.fragment.app.commit
 import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.ui.base.BaseActivity
 import com.fb.splitscreenlauncher.ui.base.Parameters
-import com.fb.splitscreenlauncher.ui.settings.fragments.AppPickerFragment
-import com.fb.splitscreenlauncher.ui.settings.fragments.LicensesFragment
+import com.fb.splitscreenlauncher.ui.base.ResultHandler
 import kotlinx.android.synthetic.main.act_preferences.*
 
 
@@ -49,7 +48,7 @@ class SettingsActivity : BaseActivity() {
             parent.startActivity(intent)
         }
 
-        fun launch(parent: BaseActivity, page: Int, requestCode: Int, onResult: (resultCode: Int, data: Intent?) -> Unit) {
+        fun launch(parent: BaseActivity, page: Int, requestCode: Int, onResult: ResultHandler) {
 
             val intent = Intent(parent, SettingsActivity::class.java).putExtra(Parameters.PAGE_ID, page)
 
