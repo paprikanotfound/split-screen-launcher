@@ -26,14 +26,12 @@ import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.net.Uri
-import android.util.Log
-import android.widget.Toast
-import io.reactivex.subjects.BehaviorSubject
 import android.provider.Settings
+import android.util.Log
 import android.util.TypedValue
+import android.widget.Toast
 import androidx.annotation.AttrRes
 import com.fb.splitscreenlauncher.ServiceAccessibility
-
 
 
 // context
@@ -111,13 +109,16 @@ fun Bitmap.scale(maxWidthAndHeight: Int): Bitmap {
     val newHeight: Int
 
     if (this.width >= this.height) {
+
         val ratio:Float = this.width.toFloat() / this.height.toFloat()
         newWidth = maxWidthAndHeight
-        newHeight = Math.round(maxWidthAndHeight / ratio)
+        newHeight = Math.max(Math.round(maxWidthAndHeight / ratio), 1)
+
     } else {
+
         val ratio:Float = this.height.toFloat() / this.width.toFloat()
         newWidth = Math.round(maxWidthAndHeight / ratio)
-        newHeight = maxWidthAndHeight
+        newHeight = Math.max(maxWidthAndHeight, 1)
     }
 
     return Bitmap.createScaledBitmap(this, newWidth, newHeight, false)
@@ -133,7 +134,7 @@ fun String.ld(tag: String = "debug") { Log.d(tag, this) }
 
 // dpi
 
-val density: Float = Resources.getSystem().displayMetrics.density
+val density: Float = Math.max(Resources.getSystem().displayMetrics.density, 1f)
 
 val Int.dpiToPx: Int
     get() = Math.round(this * density)
