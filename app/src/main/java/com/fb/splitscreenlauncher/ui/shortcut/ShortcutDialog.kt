@@ -111,7 +111,7 @@ class ShortcutDialog : DialogFragment() {
                             val indexDuplicate = if (index == 0) 1 else 0
 
                             when {
-                                model.dataSource[indexDuplicate].activityInfo?.packageName == info?.packageName -> {
+                                info != null && info.packageName == model.dataSource[indexDuplicate].activityInfo?.packageName -> {
 
                                     context.toast(res = R.string.warning_same_app_shortcut)
 
