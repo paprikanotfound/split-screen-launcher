@@ -69,14 +69,14 @@ class AppPickerFragment : PreferenceFragmentCompat() {
 
                         with (requireActivity()) {
 
-                            setResult(AppCompatActivity.RESULT_OK, Intent().putExtra(Parameters.RESULT_APP_PICK, info.activityInfo))
+                            setResult(AppCompatActivity.RESULT_OK,
+                                Intent().putExtra(Parameters.RESULT_APP_PICK, info.activityInfo))
 
                             finish()
                         }
 
                         true
                     }
-
                     preferenceScreen.addPreference(this)
                 }
 

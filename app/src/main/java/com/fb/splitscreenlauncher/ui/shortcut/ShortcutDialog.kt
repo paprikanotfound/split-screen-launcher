@@ -15,7 +15,7 @@
  *
  */
 
-package com.fb.splitscreenlauncher.ui.shortcut.dialog
+package com.fb.splitscreenlauncher.ui.shortcut
 
 import android.app.Activity
 import android.app.Dialog
@@ -33,13 +33,19 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.customview.customView
+import com.afollestad.recyclical.setup
+import com.afollestad.recyclical.withItem
 import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.ui.base.BaseActivity
 import com.fb.splitscreenlauncher.ui.base.Parameters
 import com.fb.splitscreenlauncher.ui.settings.SettingsActivity
 import com.fb.splitscreenlauncher.databinding.DialogShortcutBinding
 import com.fb.splitscreenlauncher.ui.base.ResultHandler
+import com.fb.splitscreenlauncher.ui.model.AppInfo
+import com.fb.splitscreenlauncher.ui.model.AppInfoViewHolder
+import com.fb.splitscreenlauncher.util.ld
 import com.fb.splitscreenlauncher.util.toast
+import kotlinx.android.synthetic.main.dialog_shortcut.view.*
 
 
 class ShortcutDialog : DialogFragment() {
@@ -72,28 +78,6 @@ class ShortcutDialog : DialogFragment() {
 
         val model = ViewModelProviders.of(this)
             .get(ShortcutDialogViewModel::class.java)
-            .apply {
-
-                appPickerEvents.observe(this@ShortcutDialog, Observer { event ->
-                    event.handle {
-
-                        SettingsActivity.launch(activity as BaseActivity, SettingsActivity.PAGE_APP_PICKER, it,
-                            ResultHandler { requestCode, resultCode, data ->
-
-                                val info = data?.getParcelableExtra<ActivityInfo>(Parameters.RESULT_APP_PICK)
-
-                                val result = when {
-                                    info == null || resultCode != Activity.RESULT_OK -> R.string.error_result_app_picker
-                                    else -> this.updateApp(requestCode, info)
-                                }
-
-                                if (result != -1) app.toast(res = result)
-                            })
-
-                    }
-                })
-
-            }
 
         val binding = DataBindingUtil
             .inflate<DialogShortcutBinding>(LayoutInflater.from(context), R.layout.dialog_shortcut, null, false)
@@ -102,11 +86,53 @@ class ShortcutDialog : DialogFragment() {
                 viewModel = model
             }
 
+        binding.root.recycler_view.setup {
+            withDataSource(model.dataSource)
+            withItem<AppInfo, AppInfoViewHolder>(R.layout.item_app) {
+                onBind(::AppInfoViewHolder) { index, item ->
+
+                    name.text = item.activityInfo
+                        ?.loadLabel(context.packageManager)?.toString()
+                        ?: getString(when (index) {
+                            0 -> R.string.dialog_new_top_app
+                            else -> R.string.dialog_new_bottom_app
+                        })
+
+                    icon.setImageDrawable(
+                        item.activityInfo?.loadIcon(context.packageManager) ?:
+                        context.getDrawable(R.drawable.ic_add_circle_black_24dp))
+
+                }
+                onClick { index ->
+                    SettingsActivity.launch(activity as BaseActivity, SettingsActivity.PAGE_APP_PICKER, 123,
+                        ResultHandler { _, resultCode, data ->
+
+                            val info = data?.getParcelableExtra<ActivityInfo>(Parameters.RESULT_APP_PICK)
+                            val indexDuplicate = if (index == 0) 1 else 0
+
+                            when {
+                                model.dataSource[indexDuplicate].activityInfo?.packageName == info?.packageName -> {
+
+                                    context.toast(res = R.string.warning_same_app_shortcut)
+
+                                }
+                                resultCode == Activity.RESULT_OK && info != null -> {
+
+                                    model.dataSource[index].activityInfo = info
+                                    model.dataSource.invalidateAt(index)
+                                    model.invalidatePreview()
+                                }
+                            }
+                        })
+                }
+            }
+        }
+
+        @Suppress("DEPRECATION")
         return MaterialDialog(context).show {
             title(R.string.dialog_new_title)
             noAutoDismiss()
             customView(view = binding.root, scrollable = true)
-            @Suppress("DEPRECATION")
             neutralButton(R.string.dialog_new_switch_pos) { model.swapItems() }
             positiveButton(R.string.save) {
                 when (val result = model.save()) {

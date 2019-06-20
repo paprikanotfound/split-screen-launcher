@@ -26,7 +26,7 @@ import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.databinding.ActMainBinding
 import com.fb.splitscreenlauncher.ui.base.BaseActivity
 import com.fb.splitscreenlauncher.ui.settings.SettingsActivity
-import com.fb.splitscreenlauncher.ui.shortcut.dialog.ShortcutDialog
+import com.fb.splitscreenlauncher.ui.shortcut.ShortcutDialog
 import com.fb.splitscreenlauncher.util.Theme
 import com.fb.splitscreenlauncher.util.openUrl
 import com.fb.splitscreenlauncher.util.versionName

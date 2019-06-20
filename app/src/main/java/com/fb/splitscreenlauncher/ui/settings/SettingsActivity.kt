@@ -89,7 +89,6 @@ class SettingsActivity : BaseActivity() {
         }
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -98,6 +97,7 @@ class SettingsActivity : BaseActivity() {
 
 
         // Toolbar
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         toolbar.setNavigationOnClickListener { finish() }

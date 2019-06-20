@@ -20,12 +20,10 @@ package com.fb.splitscreenlauncher.ui.shortcut
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
-import android.widget.FrameLayout
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.callbacks.onDismiss
 import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.ServiceAccessibility
-import com.fb.splitscreenlauncher.ui.shortcut.dialog.ShortcutDialog
 import com.fb.splitscreenlauncher.ui.base.BaseActivity
 import com.fb.splitscreenlauncher.ui.base.Parameters
 import com.fb.splitscreenlauncher.util.isAccessibilityEnabled
