@@ -28,6 +28,7 @@ import com.fb.splitscreenlauncher.ui.base.BaseActivity
 import com.fb.splitscreenlauncher.ui.settings.SettingsActivity
 import com.fb.splitscreenlauncher.ui.shortcut.dialog.ShortcutDialog
 import com.fb.splitscreenlauncher.util.Theme
+import com.fb.splitscreenlauncher.util.openUrl
 import com.fb.splitscreenlauncher.util.versionName
 import com.uber.autodispose.AutoDispose
 import com.uber.autodispose.android.lifecycle.AndroidLifecycleScopeProvider
@@ -35,6 +36,12 @@ import kotlinx.android.synthetic.main.act_main.*
 
 
 class MainActivity: BaseActivity() {
+
+    private companion object {
+
+        private const val PRIVACY_URL = "https://franciscobarroso.me/privacy"
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,12 +93,14 @@ class MainActivity: BaseActivity() {
                                 html()
                                 lineSpacing(1.2f)
                             }
+                            negativeButton(R.string.privacy_policy) {
+                                openUrl(PRIVACY_URL)
+                            }
                             positiveButton(R.string.close)
                         }
 
                     }
                 }
-
                 true
             }
         }
