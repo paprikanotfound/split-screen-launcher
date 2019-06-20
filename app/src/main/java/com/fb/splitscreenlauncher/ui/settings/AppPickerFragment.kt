@@ -32,7 +32,6 @@ import com.fb.splitscreenlauncher.util.dpiToPx
 import com.fb.splitscreenlauncher.util.scale
 import kotlinx.coroutines.*
 import java.util.*
-import kotlin.coroutines.resume
 
 
 class AppPickerFragment : PreferenceFragmentCompat() {
@@ -57,10 +56,9 @@ class AppPickerFragment : PreferenceFragmentCompat() {
 
             (activity as? SettingsActivity)?.showLoadingUI = true
 
-            getApps().forEach { info ->
+            withContext(Dispatchers.Default) { getInstalledAppsSorted() }.forEach { info ->
 
                 Preference(context).apply {
-
                     title = info.loadLabel(requireContext().packageManager).toString()
                     summary = info.activityInfo?.packageName
                     icon = info.loadIcon(requireContext().packageManager)
@@ -79,10 +77,7 @@ class AppPickerFragment : PreferenceFragmentCompat() {
                         true
                     }
 
-                }.also {
-
-                    preferenceScreen.addPreference(it)
-
+                    preferenceScreen.addPreference(this)
                 }
 
             }
@@ -94,14 +89,15 @@ class AppPickerFragment : PreferenceFragmentCompat() {
     }
 
 
-    private suspend fun getApps() = suspendCancellableCoroutine<MutableList<ResolveInfo>> {
+    private fun getInstalledAppsSorted(): MutableList<ResolveInfo> {
 
         val pm = requireContext().packageManager
         val mainIntent = Intent(Intent.ACTION_MAIN, null).addCategory(Intent.CATEGORY_LAUNCHER)
         val apps: MutableList<ResolveInfo> = pm.queryIntentActivities(mainIntent, 0)
+
         Collections.sort(apps, ResolveInfo.DisplayNameComparator(pm))
 
-        it.resume(apps)
+        return apps
     }
 
 
