@@ -31,25 +31,30 @@
             android:background="#00000000"
             app:elevation="0dp">
 
-        <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+        <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:title=" "
-                app:elevation="0dp"
-                app:layout_scrollFlags="scroll" />
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll">
 
-        <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/toolbar_title"
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                android:layout_marginLeft="@dimen/title_margin_horizontal"
-                android:layout_marginRight="@dimen/title_margin_horizontal"
-                android:gravity="start|center_vertical"
-                android:text="@string/app_name"
-                android:textAppearance="@style/AppTheme.TextAppearance.Title"
-                app:fontFamily="@font/cabin_bold"
-                app:layout_scrollFlags="scroll" />
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:title=" "
+                    app:elevation="0dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginLeft="@dimen/title_margin_horizontal"
+                    android:layout_marginRight="@dimen/title_margin_horizontal"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Title"
+                    app:fontFamily="@font/cabin_bold" />
+
+        </FrameLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
