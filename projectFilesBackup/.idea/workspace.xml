@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="10" />
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="debug" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2438961d-b700-4b74-96e6-ce34c21371c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+    </list>
+    <ignored path="app/release/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SplitScreenLauncher$ShortcutDialogViewModelTest.ic" NAME="ShortcutDialogViewModelTest Coverage Results" MODIFIED="1559652255850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.fb.splitscreenlauncher.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/licenses.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ServiceAccessibility.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="156" column="12" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/main/MainActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/ShortcutDialog.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>PreferenceFragmentCompat_android_layout</find>
+      <find>develop</find>
+      <find>descri</find>
+      <find>launch</find>
+      <find>md_corner_radius</find>
+      <find>is</find>
+      <find>getThemeRes</find>
+      <find>colorAccentDark</find>
+      <find>string-array</find>
+      <find>// sta</find>
+      <find>// co</find>
+      <find>autoDispo</find>
+      <find>onCreateRecyclerView</find>
+      <find>layout_preference_material_small_icon</find>
+      <find>mIcon</find>
+      <find>“</find>
+      <find>”</find>
+      <find>scroll</find>
+      <find>warning_app_not_supported</find>
+      <find>showCreateShortcutDialog</find>
+      <find>this@showCreateShortcutDialog</find>
+      <find>this@apply</find>
+      <find>.`as`(</find>
+      <find>requestPinShortut</find>
+      <find>ShortcutDialog</find>
+      <find>sc</find>
+      <find>LiveVar</find>
+      <find>save()</find>
+      <find>resultHandler</find>
+      <find>FIRST</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;</replace>
+      <replace>context</replace>
+    </replaceStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Documents/Code/com.fb.splitscreenlauncher/keystore-splitscreenlauncher" />
+    <option name="KEY_ALIAS" value="ssl" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/Ext.kt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/fb/splitscreenlauncher/ExampleInstrumentedTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/fb/splitscreenlauncher/MainSettingsTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/fb/splitscreenlauncher/ExampleUnitTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ActivitySettings.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ActivityMain.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ActivityShortcut.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/ActivityShortcut.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/ActivityMain.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/ActivitySettings.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/act_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/home/ViewModelHome.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/home/ActivityHome.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings/SettingsViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/home/HomeActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/base/Event.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/NewShortcutDialog.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings/fragments/AppPickerFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_new_shortcut.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/CreateShortcutDialog.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/util/Ext.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/util/LiveVar.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/.gitignore" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/NewShortcutDialog.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/NewShortcutDialogViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings/SettingsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/ShortcutModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/act_main.xml" />
+        <option value="$PROJECT_DIR$/app/build/generated/source/apt/debug/com/fb/splitscreenlauncher/DataBinderMapperImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings/fragments/LicensesFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/util/Theme.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/main/MainViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings/AppPickerFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/ShortcutActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/fb/splitscreenlauncher/MainActivityTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/fb/splitscreenlauncher/ShortcutDialogTest.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/base/BaseActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/ShortcutDialog.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/licenses.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/main/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/fb/splitscreenlauncher/ShortcutDialogViewModelTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/ShortcutDialogViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_shortcut.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/base/Parameters.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ServiceAccessibility.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="196" />
+    <option name="y" value="28" />
+    <option name="width" value="1494" />
+    <option name="height" value="1105" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="shortcut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="shortcut" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="splitscreenlauncher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SplitScreenLauncher" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="device.picker.selection" value="01e226a8fcc4c717" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="options.lastSelected" value="reference.settingsdialog.project.gradle" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.fb.splitscreenlauncher.ui.settings" />
+      <recent name="com.fb.splitscreenlauncher.ui.shortcut.dialog" />
+      <recent name="com.fb.splitscreenlauncher.ui.home" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.fb.splitscreenlauncher.ui.settings" />
+      <recent name="com.fb.splitscreenlauncher" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.fb.splitscreenlauncher" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/util" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/xml" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/values" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="MainActivityTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fb.splitscreenlauncher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fb.splitscreenlauncher" />
+      <option name="MAIN_CLASS_NAME" value="com.fb.splitscreenlauncher.MainActivityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortcutDialogViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fb.splitscreenlauncher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fb.splitscreenlauncher" />
+      <option name="MAIN_CLASS_NAME" value="com.fb.splitscreenlauncher.ShortcutDialogViewModelTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleInstrumentedT..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.fb.splitscreenlauncher.ExampleInstrumentedTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests in 'com.fb.splitscreenlauncher'" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="1" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.fb.splitscreenlauncher" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortcutDialogViewModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fb.splitscreenlauncher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fb.splitscreenlauncher" />
+      <option name="MAIN_CLASS_NAME" value="com.fb.splitscreenlauncher.ShortcutDialogViewModelTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.ShortcutDialogViewModelTest" />
+        <item itemvalue="Android JUnit.MainActivityTest" />
+        <item itemvalue="Android Instrumented Tests.Tests in 'com.fb.splitscreenlauncher'" />
+        <item itemvalue="Android Instrumented Tests.ExampleInstrumentedT..." />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2438961d-b700-4b74-96e6-ce34c21371c6" name="Default Changelist" comment="" />
+      <created>1558776682108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558776682108</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1559141433123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559141433123</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1559142007970</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559142007970</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1559142157478</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559142157478</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1559142341796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559142341796</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1559142413142</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559142413142</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed version name.&#10;Fixed shortcut activity label.&#10;Updated strings.">
+      <created>1559160151513</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559160151513</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Project restructuring">
+      <created>1559412458379</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559412458379</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Project restructuring">
+      <created>1559652554680</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559652554681</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Project restructuring">
+      <created>1559653233256</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559653233256</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Viewmodels">
+      <created>1559653332861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559653332861</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 12h 33m 43s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 12h 34m 26s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 12h 36m 57s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 12h 38m 27s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 12h 42m 39s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 12h 44m 58s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 13h 14m 33s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 13h 21m 45s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 13h 23m 10s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ShortcutDialogViewModelTest - 2019.06.04 at 13h 44m 23s.xml">
+      <configuration name="ShortcutDialogViewModelTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="196" y="28" width="1494" height="1105" extended-state="0" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.25550964" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Structure" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="0" sideWeight="0.49946752" visible="true" weight="0.25353536" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.49946752" weight="0.32971996" />
+      <window_info anchor="bottom" id="Android Profiler" order="2" show_stripe_button="false" weight="0.32971996" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5005325" side_tool="true" weight="0.32971996" />
+      <window_info anchor="bottom" id="Logcat" order="4" weight="0.32971996" />
+      <window_info anchor="bottom" id="Flutter Performance" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32971996" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32971996" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32971996" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32971996" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.32971996" />
+      <window_info anchor="bottom" id="Debug" order="11" />
+      <window_info anchor="right" id="Palette&#9;" order="0" />
+      <window_info anchor="right" id="Android WiFi ADB" order="1" />
+      <window_info anchor="right" id="Flutter Inspector" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Preview" order="4" />
+      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
+      <window_info anchor="right" id="Flutter Outline" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.31895635" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Fixed version name.&#10;Fixed shortcut activity label.&#10;Updated strings." />
+    <MESSAGE value="adding viewmodel" />
+    <MESSAGE value="Project restructuring" />
+    <MESSAGE value="Viewmodels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Viewmodels" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.0.0/c158207594782b42f3a2e08a5a029eb3319e4404/lifecycle-livedata-core-2.0.0-sources.jar!/androidx/lifecycle/LiveData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="263" column="19" selection-start-line="263" selection-start-column="19" selection-end-line="263" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.0.0/c158207594782b42f3a2e08a5a029eb3319e4404/lifecycle-livedata-core-2.0.0-sources.jar!/androidx/lifecycle/MutableLiveData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apt/debug/com/fb/splitscreenlauncher/databinding/DialogShortcutBindingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/aesthetic/1.0.0-beta05/b9d5ec58102327dba57310886e2cc30658ee24e/aesthetic-1.0.0-beta05-sources.jar!/com/afollestad/aesthetic/utils/TintHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="427" column="27" selection-start-line="427" selection-start-column="27" selection-end-line="427" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/ShortcutModel.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata/2.0.0/740ce61935bd789380c01178bd8ce402402ebd2f/lifecycle-livedata-2.0.0-sources.jar!/androidx/lifecycle/Transformations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Transformations#0" />
+            <element signature="method#Transformations#0;class#Transformations#0" />
+            <element signature="docComment;method#map#0;class#Transformations#0" />
+            <element signature="method#map#0;class#Transformations#0" />
+            <element signature="docComment;method#switchMap#0;class#Transformations#0" />
+            <element signature="method#switchMap#0;class#Transformations#0" />
+            <element signature="class#5942:6714" />
+            <element signature="method#onChanged#0;class#5942:6714" />
+            <element signature="e#6179#6226#1" />
+            <element signature="e#6264#6333#1" />
+            <element signature="e#6410#6690#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata/2.0.0/740ce61935bd789380c01178bd8ce402402ebd2f/lifecycle-livedata-2.0.0-sources.jar!/androidx/lifecycle/MediatorLiveData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/graphics/drawable/BitmapDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
+          <folding>
+            <element signature="e#5138#5139#0" expanded="true" />
+            <element signature="e#5189#5190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apt/debug/com/fb/splitscreenlauncher/DataBinderMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="1308" column="37" lean-forward="true" selection-start-line="1308" selection-start-column="37" selection-end-line="1308" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/content/DialogInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0-alpha09/cdcc8383bcddc0c00b682d33a6e5bbb06337eb21/fragment-1.1.0-alpha09-sources.jar!/androidx/fragment/app/DialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="274" column="28" lean-forward="true" selection-start-line="274" selection-start-column="28" selection-end-line="274" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;class#DialogFragment#0" />
+            <element signature="e#1862#1874#0" />
+            <element signature="e#1879#1912#0" />
+            <element signature="e#2071#2159#0" />
+            <element signature="e#2211#2303#0" />
+            <element signature="e#2357#2558#0" />
+            <element signature="e#2612#2828#0" />
+            <element signature="e#3806#3837#0" />
+            <element signature="e#3843#4557#0" />
+            <element signature="e#3843#4851#0" />
+            <element signature="e#4720#4781#1" />
+            <element signature="e#4806#4845#1" />
+            <element signature="e#4857#5523#0" />
+            <element signature="e#5778#6310#0" />
+            <element signature="e#5778#6599#0" />
+            <element signature="e#6605#7280#0" />
+            <element signature="e#6605#7535#0" />
+            <element signature="e#7541#7803#0" />
+            <element signature="e#7882#8108#0" />
+            <element signature="e#8203#9743#0" />
+            <element signature="e#8297#8328#1" />
+            <element signature="e#8413#9233#1" />
+            <element signature="e#8427#8483#0" />
+            <element signature="e#8723#9223#1" />
+            <element signature="e#8741#8795#0" />
+            <element signature="e#9072#9131#1" />
+            <element signature="e#9137#9209#1" />
+            <element signature="e#9296#9465#1" />
+            <element signature="e#9471#9737#1" />
+            <element signature="e#9616#9677#1" />
+            <element signature="e#9683#9727#1" />
+            <element signature="e#9749#9869#0" />
+            <element signature="e#9951#10246#0" />
+            <element signature="e#10585#10942#0" />
+            <element signature="e#10585#11098#0" />
+            <element signature="e#11104#11183#0" />
+            <element signature="e#11259#12143#0" />
+            <element signature="e#12245#12325#0" />
+            <element signature="e#12404#12712#0" />
+            <element signature="e#12525#12706#1" />
+            <element signature="e#12539#12598#0" />
+            <element signature="e#12718#13067#0" />
+            <element signature="e#12823#13061#1" />
+            <element signature="e#12837#12899#0" />
+            <element signature="e#13073#13792#0" />
+            <element signature="e#13384#13786#1" />
+            <element signature="e#13798#13807#0" />
+            <element signature="e#13798#14404#0" />
+            <element signature="e#13933#14010#1" />
+            <element signature="e#14096#14279#1" />
+            <element signature="e#14410#14422#0" />
+            <element signature="e#14410#14967#0" />
+            <element signature="e#14549#14961#0" />
+            <element signature="e#14973#16150#0" />
+            <element signature="e#14973#16298#0" />
+            <element signature="e#16304#16379#0" />
+            <element signature="e#16834#17860#0" />
+            <element signature="e#16998#17029#1" />
+            <element signature="e#17088#17331#1" />
+            <element signature="e#17132#17279#1" />
+            <element signature="e#17411#17470#1" />
+            <element signature="e#17642#17854#1" />
+            <element signature="e#17768#17844#1" />
+            <element signature="e#17866#18040#0" />
+            <element signature="e#17959#18034#1" />
+            <element signature="e#18046#18902#0" />
+            <element signature="e#18194#18395#1" />
+            <element signature="e#18297#18385#1" />
+            <element signature="e#18432#18493#1" />
+            <element signature="e#18519#18580#1" />
+            <element signature="e#18607#18682#1" />
+            <element signature="e#18710#18788#1" />
+            <element signature="e#18821#18896#1" />
+            <element signature="e#18908#19043#0" />
+            <element signature="e#18998#19037#1" />
+            <element signature="e#19049#19082#0" />
+            <element signature="e#19049#19955#0" />
+            <element signature="e#19191#19949#1" />
+            <element signature="e#19205#19263#0" />
+            <element signature="e#19420#19476#0" />
+            <element signature="e#19713#19911#1" />
+            <element signature="e#19731#19791#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/act_preferences.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings/LicensesFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="e#1092#1262#0" />
+            <element signature="e#1151#1255#0" />
+            <element signature="e#1197#1245#2" />
+            <element signature="e#2208#2326#2" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/util/Theme.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="e#917#4571#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.1.1/113450f5f2a971252086c89dd26cde062455fbe8/kotlinx-coroutines-core-common-1.1.1-sources.jar!/CancellableContinuation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="159" column="30" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.1.1/113450f5f2a971252086c89dd26cde062455fbe8/kotlinx-coroutines-core-common-1.1.1-sources.jar!/Delay.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/view/ContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="26121" column="67" lean-forward="true" selection-start-line="26121" selection-start-column="67" selection-end-line="26121" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0-alpha05/84ecfc87147b26533855a62c0f678affed03924c/appcompat-1.1.0-alpha05-sources.jar!/androidx/appcompat/app/ActionBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="1078" column="19" selection-start-line="1078" selection-start-column="19" selection-end-line="1078" selection-end-column="19" />
+          <folding>
+            <element signature="e#42106#42107#0" expanded="true" />
+            <element signature="e#42134#42135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0-alpha05/84ecfc87147b26533855a62c0f678affed03924c/appcompat-1.1.0-alpha05-sources.jar!/androidx/appcompat/app/AppCompatDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="286" column="25" selection-start-line="286" selection-start-column="25" selection-end-line="286" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0-alpha05/84ecfc87147b26533855a62c0f678affed03924c/appcompat-1.1.0-alpha05-sources.jar!/androidx/appcompat/app/AppCompatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="149" column="31" lean-forward="true" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
+          <folding>
+            <element signature="e#5651#5652#0" expanded="true" />
+            <element signature="e#5709#5710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/main/MainViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/util/LiveVar.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/util/Ext.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#1340#1419#0" />
+            <element signature="e#1478#1563#0" />
+            <element signature="e#1681#1792#0" />
+            <element signature="e#2021#2424#0" />
+            <element signature="e#2039#2372#0" />
+            <element signature="e#2271#2365#2" />
+            <element signature="e#2400#2422#0" />
+            <element signature="e#2477#2592#0" />
+            <element signature="e#2640#3148#0" />
+            <element signature="e#2717#3140#0" />
+            <element signature="e#2985#3130#2" />
+            <element signature="e#3211#3721#0" />
+            <element signature="e#3295#3468#1" />
+            <element signature="e#3474#3647#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/settings/AppPickerFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+          <folding>
+            <element signature="e#1559#1730#0" />
+            <element signature="e#1618#1723#0" />
+            <element signature="e#1665#1713#2" />
+            <element signature="e#2542#2845#2" />
+            <element signature="e#2594#2793#2" />
+            <element signature="e#3129#3462#2" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/ShortcutActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#2192#2497#2" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.truth/truth/0.42/7e72d98ff8a87f4f62f54850ff1387112eb8b917/truth-0.42-sources.jar!/com/google/common/truth/Truth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="147" column="48" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/util/AssertionsJVM.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.ext/truth/1.2.0/b35783021d44a4e7aa1dc0419eb0981f8d9f5428/truth-1.2.0-sources.jar!/androidx/test/ext/truth/view/PointerPropertiesSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/base/BaseActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#986#1904#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-all/1.10.19/539df70269cc254a58cccc5d8e43286b4a73bf30/mockito-all-1.10.19.jar!/org/hamcrest/CoreMatchers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/content/pm/ActivityInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="952" lean-forward="true" selection-start-line="952" selection-end-line="952" />
+          <folding>
+            <element signature="docComment;class#ActivityInfo#0" />
+            <element signature="e#1354#1438#0" />
+            <element signature="e#1484#1639#0" />
+            <element signature="e#1667#1792#0" />
+            <element signature="e#1846#1972#0" />
+            <element signature="e#2028#2155#0" />
+            <element signature="e#2212#2343#0" />
+            <element signature="e#2404#2680#0" />
+            <element signature="e#2713#2842#0" />
+            <element signature="e#2901#3038#0" />
+            <element signature="e#3106#3237#0" />
+            <element signature="e#3298#3428#0" />
+            <element signature="e#3488#4108#0" />
+            <element signature="e#4149#4286#0" />
+            <element signature="e#4342#4476#0" />
+            <element signature="e#4528#4670#0" />
+            <element signature="e#4731#4906#0" />
+            <element signature="e#4944#5102#0" />
+            <element signature="e#5135#5269#0" />
+            <element signature="e#5305#5597#0" />
+            <element signature="e#5635#5763#0" />
+            <element signature="e#5803#5911#0" />
+            <element signature="e#5948#6086#0" />
+            <element signature="e#6149#6456#0" />
+            <element signature="e#6533#6612#0" />
+            <element signature="e#6686#6972#0" />
+            <element signature="e#7056#7240#0" />
+            <element signature="e#7307#7459#0" />
+            <element signature="e#7540#7691#0" />
+            <element signature="e#7771#7950#0" />
+            <element signature="e#8037#8183#0" />
+            <element signature="e#8241#8421#0" />
+            <element signature="e#8460#8597#0" />
+            <element signature="e#8643#8831#0" />
+            <element signature="e#8888#9085#0" />
+            <element signature="e#9151#9350#0" />
+            <element signature="e#9404#9416#0" />
+            <element signature="e#9421#9574#0" />
+            <element signature="e#9654#9779#0" />
+            <element signature="e#9847#10237#0" />
+            <element signature="e#10298#10526#0" />
+            <element signature="e#10596#11058#0" />
+            <element signature="e#11127#11391#0" />
+            <element signature="e#11464#11742#0" />
+            <element signature="e#11807#12024#0" />
+            <element signature="e#12093#12304#0" />
+            <element signature="e#12375#12580#0" />
+            <element signature="e#12639#12866#0" />
+            <element signature="e#12945#13066#0" />
+            <element signature="e#13135#13392#0" />
+            <element signature="e#13459#14605#0" />
+            <element signature="e#14663#15000#0" />
+            <element signature="e#15073#15332#0" />
+            <element signature="e#15405#15622#0" />
+            <element signature="e#15691#15859#0" />
+            <element signature="e#15923#16157#0" />
+            <element signature="e#16224#16427#0" />
+            <element signature="e#16501#16964#0" />
+            <element signature="e#17049#17223#0" />
+            <element signature="e#17302#17460#0" />
+            <element signature="e#17528#17696#0" />
+            <element signature="e#17763#17978#0" />
+            <element signature="e#18047#18395#0" />
+            <element signature="e#18459#18794#0" />
+            <element signature="e#18862#19412#0" />
+            <element signature="e#19440#19452#0" />
+            <element signature="e#19457#20251#0" />
+            <element signature="e#20339#20763#0" />
+            <element signature="e#20827#20962#0" />
+            <element signature="e#21032#21165#0" />
+            <element signature="e#21232#21364#0" />
+            <element signature="e#21430#21558#0" />
+            <element signature="e#21620#21750#0" />
+            <element signature="e#21814#21944#0" />
+            <element signature="e#22009#22141#0" />
+            <element signature="e#22208#22347#0" />
+            <element signature="e#22422#22560#0" />
+            <element signature="e#22634#22774#0" />
+            <element signature="e#22850#22989#0" />
+            <element signature="e#23064#23198#0" />
+            <element signature="e#23269#23406#0" />
+            <element signature="e#23480#23616#0" />
+            <element signature="e#23689#23821#0" />
+            <element signature="e#23890#24020#0" />
+            <element signature="e#24086#25009#0" />
+            <element signature="e#25105#25117#0" />
+            <element signature="e#25122#25680#0" />
+            <element signature="e#25757#25957#0" />
+            <element signature="e#26011#26211#0" />
+            <element signature="e#26265#26463#0" />
+            <element signature="e#26520#26728#0" />
+            <element signature="e#26790#26995#0" />
+            <element signature="e#27054#27407#0" />
+            <element signature="e#27473#27680#0" />
+            <element signature="e#27741#27951#0" />
+            <element signature="e#28013#28218#0" />
+            <element signature="e#28282#28469#0" />
+            <element signature="e#28527#29141#0" />
+            <element signature="e#29203#29826#0" />
+            <element signature="e#29897#30088#0" />
+            <element signature="e#30146#30352#0" />
+            <element signature="e#30419#30649#0" />
+            <element signature="e#30710#31117#0" />
+            <element signature="e#31184#31520#0" />
+            <element signature="e#31585#31784#0" />
+            <element signature="e#31860#32099#0" />
+            <element signature="e#33281#33355#0" />
+            <element signature="e#33281#33674#0" />
+            <element signature="e#33528#33645#1" />
+            <element signature="e#33571#33635#1" />
+            <element signature="e#33680#33754#0" />
+            <element signature="e#33680#34073#0" />
+            <element signature="e#33927#34044#1" />
+            <element signature="e#33983#34034#1" />
+            <element signature="e#34079#34458#0" />
+            <element signature="e#34079#34767#0" />
+            <element signature="e#34773#35391#0" />
+            <element signature="e#35427#35841#0" />
+            <element signature="e#35941#36125#0" />
+            <element signature="e#36161#36446#0" />
+            <element signature="e#36523#36617#0" />
+            <element signature="e#36661#36901#0" />
+            <element signature="e#36946#36958#0" />
+            <element signature="e#37026#37038#0" />
+            <element signature="e#37104#37116#0" />
+            <element signature="e#37183#37195#0" />
+            <element signature="e#37271#37283#0" />
+            <element signature="e#37271#37922#0" />
+            <element signature="e#37404#37916#0" />
+            <element signature="e#37927#38088#0" />
+            <element signature="e#38129#38251#0" />
+            <element signature="e#38330#39265#0" />
+            <element signature="e#39271#39514#0" />
+            <element signature="e#39627#39971#0" />
+            <element signature="e#39702#39965#0" />
+            <element signature="e#39977#40061#0" />
+            <element signature="e#39977#40246#0" />
+            <element signature="e#40252#40349#0" />
+            <element signature="e#40468#40565#0" />
+            <element signature="e#40468#40932#0" />
+            <element signature="e#40938#41034#0" />
+            <element signature="e#41151#41247#0" />
+            <element signature="e#41151#41609#0" />
+            <element signature="e#41615#41704#0" />
+            <element signature="e#41828#41840#0" />
+            <element signature="e#41828#42285#0" />
+            <element signature="e#42291#42303#0" />
+            <element signature="e#42291#42585#0" />
+            <element signature="e#42591#42603#0" />
+            <element signature="e#42591#43570#0" />
+            <element signature="e#42682#43564#0" />
+            <element signature="e#43674#43686#0" />
+            <element signature="e#43674#45750#0" />
+            <element signature="e#43821#43893#1" />
+            <element signature="e#43944#44148#1" />
+            <element signature="e#44206#44404#1" />
+            <element signature="e#44530#44774#1" />
+            <element signature="e#44803#44897#1" />
+            <element signature="e#44948#45084#1" />
+            <element signature="e#45119#45371#1" />
+            <element signature="e#45491#45583#1" />
+            <element signature="e#45617#45697#1" />
+            <element signature="e#45756#45916#0" />
+            <element signature="e#45983#47398#0" />
+            <element signature="e#46744#47145#1" />
+            <element signature="e#47151#47192#1" />
+            <element signature="e#47404#47514#0" />
+            <element signature="e#47404#48281#0" />
+            <element signature="e#48287#48386#0" />
+            <element signature="e#48287#50354#0" />
+            <element signature="e#48486#50348#0" />
+            <element signature="e#50360#50384#0" />
+            <element signature="e#50360#50829#0" />
+            <element signature="e#50483#50823#0" />
+            <element signature="class#50914:51177" />
+            <element signature="e#51184#52247#0" />
+            <element signature="e#51957#52021#1" />
+            <element signature="e#52253#52940#0" />
+            <element signature="e#52253#56383#0" />
+            <element signature="e#52994#53427#0" />
+            <element signature="e#53437#53773#0" />
+            <element signature="e#53783#53925#0" />
+            <element signature="e#53967#54225#0" />
+            <element signature="e#54277#54421#0" />
+            <element signature="e#54464#54726#0" />
+            <element signature="e#54779#55099#0" />
+            <element signature="e#55143#55717#0" />
+            <element signature="e#55762#56341#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad.material-dialogs/core/3.0.0-beta2/15b6e1b2079122784f85aaef906ee9fe8ca555d2/core-3.0.0-beta2-sources.jar!/com/afollestad/materialdialogs/utils/MDUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="74" column="27" lean-forward="true" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad.material-dialogs/core/3.0.0-beta2/15b6e1b2079122784f85aaef906ee9fe8ca555d2/core-3.0.0-beta2-sources.jar!/com/afollestad/materialdialogs/message/DialogMessageSettings.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/text/Html.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="183" column="26" selection-start-line="183" selection-start-column="26" selection-end-line="183" selection-end-column="26" />
+          <folding>
+            <element signature="e#7003#7004#0" expanded="true" />
+            <element signature="e#7077#7078#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad.material-dialogs/core/3.0.0-beta2/15b6e1b2079122784f85aaef906ee9fe8ca555d2/core-3.0.0-beta2-sources.jar!/com/afollestad/materialdialogs/MaterialDialog.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="168" column="7" selection-start-line="168" selection-start-column="7" selection-end-line="168" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_shortcut.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="148" column="46" selection-start-line="148" selection-start-column="46" selection-end-line="148" selection-end-column="46" />
+          <folding>
+            <element signature="e#39#660#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/ShortcutDialogViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="36" column="76" lean-forward="true" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
+          <folding>
+            <element signature="e#1489#1523#0" />
+            <element signature="e#3129#3194#2" />
+            <element signature="e#3262#3369#2" />
+            <element signature="e#2344#2386#0" expanded="true" />
+            <element signature="e#3445#3505#2" />
+            <element signature="e#3412#3519#2" />
+            <element signature="e#2665#2710#0" expanded="true" />
+            <element signature="e#2822#2965#2" />
+            <element signature="e#3187#3330#2" />
+            <element signature="e#3958#4021#2" />
+            <element signature="e#3465#3510#1" expanded="true" />
+            <element signature="e#4622#4664#0" />
+            <element signature="e#4933#4967#0" expanded="true" />
+            <element signature="e#4626#4660#0" />
+            <element signature="e#4823#4857#0" />
+            <element signature="e#5690#5723#0" expanded="true" />
+            <element signature="e#7231#7269#0" />
+            <element signature="e#7309#7595#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/base/Parameters.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/fb/splitscreenlauncher/ShortcutDialogViewModelTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/licenses.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ServiceAccessibility.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="156" column="12" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/main/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fb/splitscreenlauncher/ui/shortcut/dialog/ShortcutDialog.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Francisco Barroso -- Apache 2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19412516" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
