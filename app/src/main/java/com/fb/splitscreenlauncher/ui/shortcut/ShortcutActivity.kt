@@ -23,18 +23,14 @@ import android.provider.Settings
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.callbacks.onDismiss
 import com.fb.splitscreenlauncher.R
-import com.fb.splitscreenlauncher.ServiceAccessibility
-import com.fb.splitscreenlauncher.ui.base.BaseActivity
-import com.fb.splitscreenlauncher.ui.base.Parameters
-import com.fb.splitscreenlauncher.util.isAccessibilityEnabled
-import com.fb.splitscreenlauncher.util.toast
+import com.fb.splitscreenlauncher.service.ServiceAccessibility
+import com.fb.splitscreenlauncher.util.Parameters
+import com.fb.splitscreenlauncher.util.misc.ActivityExt
+import com.fb.splitscreenlauncher.util.misc.isAccessibilityEnabled
+import com.fb.splitscreenlauncher.util.misc.toast
 
 
-class ShortcutActivity: BaseActivity() {
-
-
-    override val useAesthetic: Boolean = false
-
+class ShortcutActivity: ActivityExt() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,14 +38,13 @@ class ShortcutActivity: BaseActivity() {
         when {
             intent?.action == Intent.ACTION_CREATE_SHORTCUT -> {
 
-                ShortcutDialog.show(this,
-                    Bundle().apply {
-                        putBoolean(Parameters.REQUEST_PINNED_SHORTCUT, false)
-                        putBoolean(Parameters.FINISH_PARENT_AFTER_DISMISS, true)
-                    })
+                ShortcutDialog.show(this, Bundle().apply {
+                    putBoolean(Parameters.REQUEST_PINNED_SHORTCUT, false)
+                    putBoolean(Parameters.FINISH_PARENT_AFTER_DISMISS, true)
+                })
 
             }
-            !isAccessibilityEnabled() -> {
+            !isAccessibilityEnabled(ServiceAccessibility::class.java) -> {
 
                 MaterialDialog(this).show {
                     title(R.string.dialog_accessibility_title)

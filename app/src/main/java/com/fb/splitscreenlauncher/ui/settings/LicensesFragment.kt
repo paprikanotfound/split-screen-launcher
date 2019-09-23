@@ -22,7 +22,7 @@ import androidx.fragment.app.Fragment
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.fb.splitscreenlauncher.R
-import com.fb.splitscreenlauncher.util.launchUrl
+import com.fb.splitscreenlauncher.util.misc.launchUrl
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -60,7 +60,7 @@ class LicensesFragment : PreferenceFragmentCompat() {
                     isIconSpaceReserved = false
                     onPreferenceClickListener = Preference.OnPreferenceClickListener {
 
-                        requireContext().launchUrl(urls[index])
+                        context?.launchUrl(urls[index])
 
                         true
                     }

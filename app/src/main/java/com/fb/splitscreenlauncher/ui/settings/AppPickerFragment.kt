@@ -25,11 +25,11 @@ import androidx.fragment.app.Fragment
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.fb.splitscreenlauncher.R
-import com.fb.splitscreenlauncher.ui.base.Parameters
-import com.fb.splitscreenlauncher.util.asBitmap
-import com.fb.splitscreenlauncher.util.asDrawable
-import com.fb.splitscreenlauncher.util.dpiToPx
-import com.fb.splitscreenlauncher.util.scale
+import com.fb.splitscreenlauncher.util.Parameters
+import com.fb.splitscreenlauncher.util.misc.asBitmap
+import com.fb.splitscreenlauncher.util.misc.asDrawable
+import com.fb.splitscreenlauncher.util.misc.scale
+import com.fb.splitscreenlauncher.util.misc.toPx
 import kotlinx.coroutines.*
 import java.util.*
 
@@ -63,7 +63,7 @@ class AppPickerFragment : PreferenceFragmentCompat() {
                     summary = info.activityInfo?.packageName
                     icon = info.loadIcon(requireContext().packageManager)
                         ?.asBitmap()
-                        ?.scale(40.dpiToPx)
+                        ?.scale(40.toPx)
                         ?.asDrawable(context.resources)
                     onPreferenceClickListener = Preference.OnPreferenceClickListener {
 

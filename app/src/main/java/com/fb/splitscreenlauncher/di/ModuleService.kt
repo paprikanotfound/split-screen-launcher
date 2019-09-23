@@ -15,9 +15,22 @@
  *
  */
 
-package com.fb.splitscreenlauncher.ui.model
+package com.fb.splitscreenlauncher.di
 
-import android.content.pm.ActivityInfo
+import com.fb.splitscreenlauncher.service.ServiceController
+import com.fb.splitscreenlauncher.service.ServiceControllerImpl
+import org.koin.dsl.module
 
 
-data class AppInfo (var activityInfo: ActivityInfo? = null)
+val moduleService = module {
+
+    single { ServiceControllerImpl(get()) as ServiceController }
+
+
+}
+
+val moduleServiceTest = module {
+
+    single { ServiceControllerImpl(get()) }
+
+}

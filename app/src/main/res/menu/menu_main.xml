@@ -20,21 +20,19 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".ui.main.MainActivity">
 
-    <item android:id="@+id/action_dark_theme"
-          android:title="@string/action_dark_theme"
-          android:checked="false"
-          android:checkable="true"
-          android:orderInCategory="100"
+    <item android:id="@+id/action_app_theme"
+          android:title="@string/action_app_theme"
+          android:orderInCategory="0"
           app:showAsAction="never"/>
 
     <item android:id="@+id/action_licenses"
           android:title="@string/action_licenses"
-          android:orderInCategory="101"
+          android:orderInCategory="1"
           app:showAsAction="never"/>
 
     <item android:id="@+id/action_about"
           android:title="@string/action_about"
-          android:orderInCategory="102"
+          android:orderInCategory="2"
           app:showAsAction="never"/>
 
 

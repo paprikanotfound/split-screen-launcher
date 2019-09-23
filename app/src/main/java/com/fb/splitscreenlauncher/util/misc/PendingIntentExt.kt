@@ -15,26 +15,9 @@
  *
  */
 
-package com.fb.splitscreenlauncher.util
+package com.fb.splitscreenlauncher.util.misc
 
-import android.content.ActivityNotFoundException
-import android.content.Intent
-import android.content.Intent.ACTION_VIEW
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
+import android.app.PendingIntent
 
 
-fun AppCompatActivity.openUrl(url: String? = null, res: Int = 0) {
-
-    val uri = Uri.parse(url ?: getString(res))
-
-    return try {
-
-        startActivity(Intent(ACTION_VIEW, uri))
-
-    } catch (_: ActivityNotFoundException) {
-
-        startActivity(Intent.createChooser(Intent(ACTION_VIEW).setData(uri), "Select app"))
-
-    }
-}
+fun PendingIntent.sendSafe() = try { send() } catch (_: PendingIntent.CanceledException) {  }

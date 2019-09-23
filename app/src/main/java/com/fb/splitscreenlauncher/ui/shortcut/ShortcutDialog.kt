@@ -25,27 +25,24 @@ import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.observe
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.customview.customView
 import com.afollestad.recyclical.setup
 import com.afollestad.recyclical.withItem
 import com.fb.splitscreenlauncher.R
-import com.fb.splitscreenlauncher.ui.base.BaseActivity
-import com.fb.splitscreenlauncher.ui.base.Parameters
+import com.fb.splitscreenlauncher.databinding.ShortcutDialogBinding
 import com.fb.splitscreenlauncher.ui.settings.SettingsActivity
-import com.fb.splitscreenlauncher.databinding.DialogShortcutBinding
-import com.fb.splitscreenlauncher.ui.base.ResultHandler
-import com.fb.splitscreenlauncher.ui.model.AppInfo
-import com.fb.splitscreenlauncher.ui.model.AppInfoViewHolder
-import com.fb.splitscreenlauncher.util.ld
-import com.fb.splitscreenlauncher.util.toast
-import kotlinx.android.synthetic.main.dialog_shortcut.view.*
+import com.fb.splitscreenlauncher.ui.settings.model.AppInfo
+import com.fb.splitscreenlauncher.ui.settings.model.AppInfoViewHolder
+import com.fb.splitscreenlauncher.util.Parameters
+import com.fb.splitscreenlauncher.util.misc.ActivityExt
+import com.fb.splitscreenlauncher.util.misc.toast
+import kotlinx.android.synthetic.main.shortcut_dialog.view.*
+import org.koin.android.viewmodel.ext.android.viewModel
 
 
 class ShortcutDialog : DialogFragment() {
@@ -56,8 +53,8 @@ class ShortcutDialog : DialogFragment() {
         private const val TAG = "SHORTCUT"
 
 
-        fun show(context: AppCompatActivity, args: Bundle = Bundle())
-                = ShortcutDialog().also {
+        fun show(context: AppCompatActivity,
+                 args: Bundle = Bundle()) = ShortcutDialog().also {
             it.arguments = args
             it.show(context.supportFragmentManager, TAG)
         }
@@ -76,19 +73,53 @@ class ShortcutDialog : DialogFragment() {
 
         val context = activity ?: throw IllegalStateException("ShortcutDialog")
 
-        val model = ViewModelProviders.of(this)
-            .get(ShortcutDialogViewModel::class.java)
+        val model: ShortcutDialogViewModel by viewModel()
 
+
+        with (model) {
+
+            navigateBack.observe(this@ShortcutDialog) { shortcutInfo ->
+
+                shortcutInfo?.let {
+
+                    val result = ShortcutManagerCompat.createShortcutResultIntent(context, shortcutInfo)
+
+                    // Request shortcut pinning
+                    if (requestPinShortcut && ShortcutManagerCompat.isRequestPinShortcutSupported(context)) {
+
+                        val successCallback =
+                            PendingIntent.getBroadcast(context, 0, result, 0)
+
+                        ShortcutManagerCompat
+                            .requestPinShortcut(context, shortcutInfo, successCallback.intentSender)
+
+                    }
+
+                    // Set result
+                    activity?.setResult(Activity.RESULT_OK, result)
+                }
+
+
+                dismiss()
+
+            }
+
+            toasts.observe(this@ShortcutDialog) { context.toast(res = it) }
+
+        }
+
+
+        // View binding
         val binding = DataBindingUtil
-            .inflate<DialogShortcutBinding>(LayoutInflater.from(context), R.layout.dialog_shortcut, null, false)
+            .inflate<ShortcutDialogBinding>(LayoutInflater.from(context), R.layout.shortcut_dialog, null, false)
             .apply {
                 lifecycleOwner = this@ShortcutDialog
                 viewModel = model
             }
 
         binding.root.recycler_view.setup {
-            withDataSource(model.dataSource)
-            withItem<AppInfo, AppInfoViewHolder>(R.layout.item_app) {
+            withDataSource(model.repo.dataSource)
+            withItem<AppInfo, AppInfoViewHolder>(R.layout.shortcut_dialog_item_app) {
                 onBind(::AppInfoViewHolder) { index, item ->
 
                     name.text = item.activityInfo
@@ -104,62 +135,31 @@ class ShortcutDialog : DialogFragment() {
 
                 }
                 onClick { index ->
-                    SettingsActivity.launch(activity as BaseActivity, SettingsActivity.PAGE_APP_PICKER, 123,
-                        ResultHandler { _, resultCode, data ->
+                    (context as? ActivityExt)?.apply {
 
-                            val info = data?.getParcelableExtra<ActivityInfo>(Parameters.RESULT_APP_PICK)
-                            val indexDuplicate = if (index == 0) 1 else 0
+                        SettingsActivity.launch(this, SettingsActivity.PAGE_APP_PICKER, 123) { resultCode, data ->
 
-                            when {
-                                info != null && info.packageName == model.dataSource[indexDuplicate].activityInfo?.packageName -> {
+                            val info =
+                                data?.getParcelableExtra<ActivityInfo>(Parameters.RESULT_APP_PICK)
 
-                                    context.toast(res = R.string.warning_same_app_shortcut)
+                            if (resultCode == Activity.RESULT_OK && info != null)
+                                model.setApp(index, info)
 
-                                }
-                                resultCode == Activity.RESULT_OK && info != null -> {
+                        }
 
-                                    model.dataSource[index].activityInfo = info
-                                    model.dataSource.invalidateAt(index)
-                                    model.invalidatePreview()
-                                }
-                            }
-                        })
+                    }
                 }
             }
         }
 
-        @Suppress("DEPRECATION")
+
+        // Create dialog
         return MaterialDialog(context).show {
-            title(R.string.dialog_new_title)
             noAutoDismiss()
-            customView(view = binding.root, scrollable = true)
+            customView(view = binding.root, scrollable = false, noVerticalPadding = true)
             neutralButton(R.string.dialog_new_switch_pos) { model.swapItems() }
-            positiveButton(R.string.save) {
-                when (val result = model.save()) {
-                    is Int -> context.toast(res = result)
-                    is ShortcutInfoCompat -> {
-
-                        val resultIntent = ShortcutManagerCompat.createShortcutResultIntent(context, result)
-
-                        // request pin shortcut
-                        if (requestPinShortcut && ShortcutManagerCompat.isRequestPinShortcutSupported(context)) {
-
-                            val successCallback =
-                                PendingIntent.getBroadcast(context, 0, resultIntent, 0)
-
-                            ShortcutManagerCompat.requestPinShortcut(context, result, successCallback.intentSender)
-
-                        }
-
-                        // set result
-                        requireActivity().setResult(Activity.RESULT_OK, resultIntent)
-
-                        // dismiss dialog
-                        dismiss()
-                    }
-                }
-            }
-            negativeButton(R.string.cancel) { dismiss() }
+            negativeButton(R.string.cancel) { model.clear(); dismiss() }
+            positiveButton(R.string.save) { model.save() }
         }
     }
 

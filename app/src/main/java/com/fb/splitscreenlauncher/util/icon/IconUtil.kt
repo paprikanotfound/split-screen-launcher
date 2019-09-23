@@ -15,12 +15,13 @@
  *
  */
 
-package com.fb.splitscreenlauncher.util
+package com.fb.splitscreenlauncher.util.icon
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Rect
 import android.graphics.drawable.Drawable
+import com.fb.splitscreenlauncher.util.misc.toPx
 
 
 class IconUtil {
@@ -33,20 +34,20 @@ class IconUtil {
         fun getIcon(style: Int = STACKED, iconFirst: Drawable?, iconSecond: Drawable?): Bitmap? {
             return when (style) {
                 SPLIT -> null
-                else -> Bitmap.createBitmap(56.dpiToPx, 56.dpiToPx, Bitmap.Config.ARGB_8888).also {
+                else -> Bitmap.createBitmap(56.toPx, 56.toPx, Bitmap.Config.ARGB_8888).also {
 
                     val canvas = Canvas(it)
 
                     iconFirst?.apply {
                         val tempBounds = copyBounds()
-                        bounds = Rect(0, 0, 36.dpiToPx, 36.dpiToPx)
+                        bounds = Rect(0, 0, 36.toPx, 36.toPx)
                         draw(canvas)
                         bounds = tempBounds
                     }
 
                     iconSecond?.mutate()?.apply {
                         val tempBounds = copyBounds()
-                        bounds = Rect(0, 0, 36.dpiToPx, 36.dpiToPx).apply { offset(20.dpiToPx, 20.dpiToPx) }
+                        bounds = Rect(0, 0, 36.toPx, 36.toPx).apply { offset(20.toPx, 20.toPx) }
                         draw(canvas)
                         bounds = tempBounds
                     }

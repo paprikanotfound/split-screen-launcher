@@ -15,7 +15,7 @@
  *
  */
 
-package com.fb.splitscreenlauncher.util
+package com.fb.splitscreenlauncher.util.rx
 
 import io.reactivex.subjects.BehaviorSubject
 

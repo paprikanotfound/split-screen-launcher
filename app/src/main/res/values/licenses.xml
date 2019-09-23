@@ -26,8 +26,14 @@
     <string translatable="false" name="ol_dialogs_title">Material Dialogs — Aidan Follestad</string>
     <string translatable="false" name="ol_dialogs_url">https://github.com/afollestad/material-dialogs</string>
 
-    <string translatable="false" name="ol_theme_title">Aesthetic — Aidan Follestad</string>
-    <string translatable="false" name="ol_theme_url">https://github.com/afollestad/aesthetic</string>
+    <string translatable="false" name="ol_recycler_title">Recyclical — Aidan Follestad</string>
+    <string translatable="false" name="ol_recycler_url">https://github.com/afollestad/recyclical</string>
+
+    <string translatable="false" name="ol_prefs_title">RxkPrefs — Aidan Follestad</string>
+    <string translatable="false" name="ol_prefs_url">https://github.com/afollestad/rxkprefs</string>
+
+    <string translatable="false" name="ol_di_title">Koin — Arnaud GIULIANI, Laurent BARESSE</string>
+    <string translatable="false" name="ol_di_url">https://github.com/InsertKoinIO/koin</string>
 
     <string translatable="false" name="ol_google_icons_title">Google Material Design Icons</string>
     <string translatable="false" name="ol_google_icons_url">https://material.io/tools/icons/</string>
@@ -38,7 +44,9 @@
 
     <string-array name="library_titles">
         <item>@string/ol_dialogs_title</item>
-        <item>@string/ol_theme_title</item>
+        <item>@string/ol_prefs_title</item>
+        <item>@string/ol_recycler_title</item>
+        <item>@string/ol_di_title</item>
         <item>@string/ol_google_icons_title</item>
         <item>@string/ol_autodispose_title</item>
     </string-array>
@@ -49,11 +57,14 @@
         <item>@string/license_apache2</item>
         <item>@string/license_apache2</item>
         <item>@string/license_apache2</item>
+        <item>@string/license_apache2</item>
     </string-array>
 
     <string-array name="library_urls">
         <item>@string/ol_dialogs_url</item>
-        <item>@string/ol_theme_url</item>
+        <item>@string/ol_prefs_url</item>
+        <item>@string/ol_recycler_url</item>
+        <item>@string/ol_di_url</item>
         <item>@string/ol_google_icons_url</item>
         <item>@string/ol_autodispose_url</item>
     </string-array>

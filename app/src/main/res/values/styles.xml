@@ -17,15 +17,18 @@
 
 <resources>
 
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-
-        <item name="themeId">0</item>
+    <style name="AppThemeBase" parent="Theme.MaterialComponents.DayNight">
 
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
         <item name="md_corner_radius">8dp</item>
-        <item name="md_color_button_text">@color/colorAccent</item>
+        <item name="md_color_button_text">?attr/colorAccent</item>
+
+    </style>
+
+
+    <style name="AppTheme" parent="AppThemeBase">
 
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
@@ -36,49 +39,19 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorBackgroundLight">@color/colorBackgroundLight</item>
         <item name="colorBackgroundDark">@color/colorBackgroundDark</item>
 
-        <item name="snackbarButtonStyle">@style/AppSnackbar</item>
     </style>
 
-    <style name="AppTheme.Dark" parent="Theme.MaterialComponents">
 
-        <item name="themeId">1</item>
+    <style name="AppTheme.Black" parent="AppTheme" />
 
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
 
-        <item name="md_corner_radius">8dp</item>
-        <item name="md_color_button_text">@color/colorNightAccent</item>
-
-        <item name="android:textColorPrimary">@color/textNightColorPrimary</item>
-        <item name="android:textColorSecondary">@color/textNightColorSecondary</item>
-        <item name="android:textColorTertiary">@color/textNightColorTertiary</item>
-
-        <item name="toolbarTitleColor">@color/textNightColorPrimary</item>
-
-        <item name="colorAccent">@color/colorNightAccent</item>
-        <item name="colorPrimary">@color/colorNightPrimary</item>
-        <item name="colorPrimaryDark">@color/colorNightPrimaryDark</item>
-        <item name="colorBackgroundLight">@color/colorNightBackgroundLight</item>
-        <item name="colorBackgroundDark">@color/colorNightBackgroundDark</item>
-
-        <item name="snackbarButtonStyle">@style/AppSnackbar</item>
-    </style>
-
-    <style name="AppTheme.Black" parent="AppTheme.Dark">
-
-        <item name="themeId">2</item>
-
-        <item name="colorBackgroundDark">@color/colorBlackBackgroundDark</item>
-
-    </style>
-
+    <!-- Shortcut activity -->
     <style name="AppTheme.Overlay" parent="AppTheme">
-
-        <item name="md_corner_radius">8dp</item>
-        <item name="md_color_button_text">@color/colorAccent</item>
 
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimAmount">0.0</item>
@@ -97,16 +70,12 @@
 
     </style>
 
+
     <!-- toolbar title -->
     <style name="AppTheme.TextAppearance.Title" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="fontFamily">@font/cabin_bold</item>
         <item name="android:fontFamily">@font/cabin_bold</item>
         <item name="android:textColor">?toolbarTitleColor</item>
-    </style>
-
-    <!-- Fix: snackbar action tint color -->
-    <style name="AppSnackbar" parent="Widget.MaterialComponents.Button">
-        <item name="android:background">?selectableItemBackground</item>
     </style>
 
 

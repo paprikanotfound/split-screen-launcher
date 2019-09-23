@@ -15,21 +15,16 @@
  *
  */
 
-package com.fb.splitscreenlauncher.ui.base
+package com.fb.splitscreenlauncher.ui.settings.model
+
+import android.view.View
+import androidx.appcompat.widget.AppCompatImageView
+import androidx.appcompat.widget.AppCompatTextView
+import com.afollestad.recyclical.ViewHolder
+import com.fb.splitscreenlauncher.R
 
 
-open class Event<out T>(private val content: T) {
-
-    private var hasBeenHandled = false
-        get() {
-            val result = field
-            field = true
-            return result
-        }
-
-    val last: T
-        get() = content
-
-    fun handle(func: (content: T) -> Unit) { if (!hasBeenHandled) func(content) }
-
+class AppInfoViewHolder (itemView: View): ViewHolder(itemView) {
+    val name: AppCompatTextView = itemView.findViewById(R.id.text_name)
+    val icon: AppCompatImageView = itemView.findViewById(R.id.img_icon)
 }

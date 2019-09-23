@@ -25,13 +25,12 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.commit
 import com.fb.splitscreenlauncher.R
-import com.fb.splitscreenlauncher.ui.base.BaseActivity
-import com.fb.splitscreenlauncher.ui.base.Parameters
-import com.fb.splitscreenlauncher.ui.base.ResultHandler
-import kotlinx.android.synthetic.main.act_preferences.*
+import com.fb.splitscreenlauncher.util.Parameters
+import com.fb.splitscreenlauncher.util.misc.ActivityExt
+import kotlinx.android.synthetic.main.preferences_activity.*
 
 
-class SettingsActivity : BaseActivity() {
+class SettingsActivity : ActivityExt() {
 
 
     companion object {
@@ -48,15 +47,19 @@ class SettingsActivity : BaseActivity() {
             parent.startActivity(intent)
         }
 
-        fun launch(parent: BaseActivity, page: Int, requestCode: Int, onResult: ResultHandler) {
 
-            val intent = Intent(parent, SettingsActivity::class.java).putExtra(Parameters.PAGE_ID, page)
+        fun launch(parent: ActivityExt,
+                   page: Int,
+                   requestCode: Int,
+                   callback: ((resultCode: Int, data: Intent?) -> Any?)) {
 
-            with (parent) {
-                resultReceiver = requestCode to onResult
-                startActivityForResult(intent, requestCode)
-            }
+            val intent = Intent(parent, SettingsActivity::class.java)
+                .putExtra(Parameters.PAGE_ID, page)
+
+            parent.startActivityForResult(intent, requestCode, callback)
+
         }
+
 
     }
 
@@ -92,12 +95,11 @@ class SettingsActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.act_preferences)
+        setContentView(R.layout.preferences_activity)
         setSupportActionBar(toolbar)
 
 
         // Toolbar
-
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         toolbar.setNavigationOnClickListener { finish() }
@@ -112,13 +114,13 @@ class SettingsActivity : BaseActivity() {
 
 
         // Fragment
-
         if (savedInstanceState == null) {
 
             val fragment = currentFragment
             val oldFragment = supportFragmentManager.findFragmentById(R.id.container)
 
             if (!fragment::class.java.isInstance(oldFragment)) {
+
                 // Only replace the Fragment if there was a change
                 supportFragmentManager.commit {
                     replace(R.id.container, fragment)

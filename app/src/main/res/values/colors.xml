@@ -35,7 +35,7 @@
     <!-- dark -->
     <color name="colorNightPrimary">#1D1D1D</color>
     <color name="colorNightPrimaryDark">#1B1B1B</color>
-    <color name="colorNightAccent">#00838f</color>
+    <color name="colorNightAccent">#02AABB</color>
 
     <color name="textNightColorPrimary">#FFFFFF</color>
     <color name="textNightColorSecondary">#E2E2E2</color>

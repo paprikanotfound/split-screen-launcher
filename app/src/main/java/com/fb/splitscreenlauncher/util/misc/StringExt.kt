@@ -15,28 +15,10 @@
  *
  */
 
-package com.fb.splitscreenlauncher.ui.base
+package com.fb.splitscreenlauncher.util.misc
 
-class Parameters {
+import android.util.Log
 
-    companion object {
 
-        // settings activity
-
-        const val PAGE_ID = "page"
-
-        // app picker fragment
-
-        const val RESULT_APP_PICK = "result_app_pick"
-
-        // create shortcut dialog
-
-        const val FIRST = "first"
-        const val SECOND = "second"
-
-        const val FINISH_PARENT_AFTER_DISMISS = "finish_on_dismiss"
-        const val REQUEST_PINNED_SHORTCUT = "request_pin_shortcut"
-
-    }
-
-}
+/** print debug log */
+fun String.ld(tag: String = "debug") = Log.d(tag, this)
