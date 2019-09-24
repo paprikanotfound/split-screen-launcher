@@ -26,7 +26,7 @@ import org.koin.dsl.module
 
 val moduleShortcutDialog = module {
 
-    single { ShortcutDialogRepoImpl(get()) as ShortcutDialogRepo }
+    factory { ShortcutDialogRepoImpl(get()) as ShortcutDialogRepo }
 
     viewModel { ShortcutDialogViewModel(get(), get()) }
 
