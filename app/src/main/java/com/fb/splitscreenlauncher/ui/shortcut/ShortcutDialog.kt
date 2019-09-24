@@ -75,7 +75,6 @@ class ShortcutDialog : DialogFragment() {
 
         val model: ShortcutDialogViewModel by viewModel()
 
-
         with (model) {
 
             navigateBack.observe(this@ShortcutDialog) { shortcutInfo ->
@@ -158,7 +157,7 @@ class ShortcutDialog : DialogFragment() {
             noAutoDismiss()
             customView(view = binding.root, scrollable = false, noVerticalPadding = true)
             neutralButton(R.string.dialog_new_switch_pos) { model.swapItems() }
-            negativeButton(R.string.cancel) { model.clear(); dismiss() }
+            negativeButton(R.string.cancel) { dismiss() }
             positiveButton(R.string.save) { model.save() }
         }
     }
@@ -167,7 +166,9 @@ class ShortcutDialog : DialogFragment() {
     override fun onDismiss(dialog: DialogInterface) {
         super.onDismiss(dialog)
 
+
         if (finishActivityOnDismiss) activity?.finish()
+
 
     }
 

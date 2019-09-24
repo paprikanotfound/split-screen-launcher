@@ -104,21 +104,13 @@ class ShortcutDialogViewModel(val app: Application,
                     .build()
 
 
-                // dismiss dialog
+                // dismiss dialog & return result
                 navigateBack.setValue(shortcutInfo)
+
 
                 true
             }
         }
-
-    }
-
-
-    fun clear() {
-
-        repo.clear()
-
-        invalidatePreview()
 
     }
 
