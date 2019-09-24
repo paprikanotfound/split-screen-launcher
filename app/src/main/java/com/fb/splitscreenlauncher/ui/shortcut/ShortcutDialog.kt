@@ -156,6 +156,7 @@ class ShortcutDialog : DialogFragment() {
         return MaterialDialog(context).show {
             noAutoDismiss()
             customView(view = binding.root, scrollable = false, noVerticalPadding = true)
+            @Suppress("DEPRECATION")
             neutralButton(R.string.dialog_new_switch_pos) { model.swapItems() }
             negativeButton(R.string.cancel) { dismiss() }
             positiveButton(R.string.save) { model.save() }
