@@ -62,6 +62,7 @@
 
     <!-- Accessibility-->
     <string name="accessibility_description">Used to trigger split screen mode</string>
+    <string name="app_not_found">App not found</string>
 
 
     <!-- About dialog -->

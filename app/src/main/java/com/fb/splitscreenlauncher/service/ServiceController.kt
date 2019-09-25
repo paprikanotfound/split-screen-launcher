@@ -20,8 +20,12 @@ package com.fb.splitscreenlauncher.service
 import android.app.Application
 import android.content.Intent
 import androidx.annotation.VisibleForTesting
+import com.fb.splitscreenlauncher.R
+import com.fb.splitscreenlauncher.util.misc.isCallable
+import com.fb.splitscreenlauncher.util.misc.toast
 import com.fb.splitscreenlauncher.util.rx.LiveVar
 import kotlinx.coroutines.*
+import java.lang.Exception
 
 
 interface ServiceController {
@@ -54,7 +58,7 @@ class ServiceControllerImpl(val app: Application): ServiceController {
     override var actionSplitScreen: () -> Unit = {  }
     override val launchState: LiveVar<Int> =  LiveVar(ServiceController.STATE_PAUSED)
 
-    private var intents : Pair<Intent, Intent> = Intent() to Intent()
+    private var shortcut : Pair<Intent, Intent> = Intent() to Intent()
 
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
     val job = Job()
@@ -65,8 +69,9 @@ class ServiceControllerImpl(val app: Application): ServiceController {
         when (launchState.value) {
             ServiceController.STATE_TRIGGER_SPLITSCREEN -> {
 
-                if (pkgName == intents.first.`package`) {
+                if (pkgName == shortcut.first.`package`) {
 
+                    // Trigger split-screen mode
                     actionSplitScreen()
 
                     launchState.value = ServiceController.STATE_LAUNCH_BOTTOM_APP
@@ -75,17 +80,13 @@ class ServiceControllerImpl(val app: Application): ServiceController {
             }
             ServiceController.STATE_LAUNCH_BOTTOM_APP -> {
 
-                val eventIsFromSecondActivity = pkgName == intents.second.`package`
+                val eventIsFromSecondActivity = pkgName == shortcut.second.`package`
 
                 when {
                     !eventIsFromSecondActivity && isSplitScreenUIVisible -> {
 
-                        app.startActivity(intents.second)
-
-//                        // Launch second app
-//                        PendingIntent
-//                            .getActivity(app, 0, intents.second, PendingIntent.FLAG_ONE_SHOT, null)
-//                            .send()
+                        // Launch second app
+                        launchIntent(shortcut.second)
 
                     }
                     isSplitScreenUIVisible -> {
@@ -106,7 +107,7 @@ class ServiceControllerImpl(val app: Application): ServiceController {
 
         if (launchState.value == ServiceController.STATE_PAUSED) {
 
-            intents = shortcutIntents
+            shortcut = shortcutIntents
 
 
             // Set next step to trigger split-screen mode
@@ -114,11 +115,7 @@ class ServiceControllerImpl(val app: Application): ServiceController {
 
 
             // Launch first app
-            app.startActivity(shortcutIntents.first)
-
-//            PendingIntent
-//                .getActivity(app, 0, intents.first, PendingIntent.FLAG_ONE_SHOT, Bundle())
-//                .sendSafe()
+            launchIntent(shortcutIntents.first)
 
 
             // Cancel shortcut event after timeout
@@ -131,5 +128,12 @@ class ServiceControllerImpl(val app: Application): ServiceController {
 
     }
 
+
+    private fun launchIntent(intent: Intent) {
+        when {
+            intent.isCallable(app) -> app.startActivity(intent)
+            else -> app.toast(res = R.string.app_not_found)
+        }
+    }
 
 }

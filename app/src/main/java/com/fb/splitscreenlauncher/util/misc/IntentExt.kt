@@ -17,7 +17,9 @@
 
 package com.fb.splitscreenlauncher.util.misc
 
-import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
 
 
-fun PendingIntent.sendSafe() = try { send() } catch (_: PendingIntent.CanceledException) {  }
+fun Intent.isCallable(context: Context) = context.packageManager.resolveActivity(this, 0) != null
