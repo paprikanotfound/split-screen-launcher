@@ -1,6 +1,6 @@
 # Split Screen Launcher
 
-Create app shortcuts on the home screen to launch two apps directly in split screen mode. The app uses the Android Accessibility API to trigger the split screen mode.
+Create app shortcuts on the homescreen to launch two apps directly in split screen mode. The app uses the Android Accessibility API to trigger the split screen mode.
 
 ### Download
 

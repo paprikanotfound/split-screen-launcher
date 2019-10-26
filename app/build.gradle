@@ -48,8 +48,11 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
         }
     }
     compileOptions {
@@ -60,41 +63,46 @@ android {
         exclude 'META-INF/core_release.kotlin_module'
     }
 
-
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation deps.kotlin
 
+    // test
     testImplementation deps.mockk
     testImplementation deps.koin_test
     testImplementation deps.junit
     testImplementation deps.rules
     testImplementation deps.arch_core
 
+    // kotlin
+    implementation deps.kotlin
     implementation deps.coroutines
     implementation deps.coroutines_android
 
+    // support
     implementation deps.support.material
     implementation deps.support.recyclerview
     implementation deps.support.core_ktx
     implementation deps.support.preference
     implementation deps.support.fragment_runtime
     implementation deps.support.fragment_runtime_ktx
-
     implementation deps.constrain_layout
     implementation deps.lifecycle
+
+    // rx
     implementation deps.rxjava2
     implementation deps.rx_android
+    implementation deps.autodispose
 
+    // di
     implementation deps.koin_core
     implementation deps.koin_android
     implementation deps.koin_viewmodel
 
-    implementation deps.autodispose
-    implementation deps.material_dialogs_core
+    // others
     implementation deps.rxkprefs
+    implementation deps.material_dialogs_core
     implementation deps.recyclical
 
 }
