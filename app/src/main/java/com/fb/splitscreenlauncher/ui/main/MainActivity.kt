@@ -18,7 +18,6 @@
 package com.fb.splitscreenlauncher.ui.main
 
 import android.os.Bundle
-import android.text.Html
 import androidx.databinding.DataBindingUtil
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.list.listItemsSingleChoice
