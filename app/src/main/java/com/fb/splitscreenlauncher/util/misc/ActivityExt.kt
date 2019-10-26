@@ -24,7 +24,7 @@ import androidx.appcompat.app.AppCompatActivity
 abstract class ActivityExt : AppCompatActivity() {
 
 
-    var resultReceiver: ((resultCode: Int, data: Intent?) -> Any?)? = null
+    private var resultReceiver: ((resultCode: Int, data: Intent?) -> Any?)? = null
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, result: Intent?) {

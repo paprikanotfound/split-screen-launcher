@@ -30,8 +30,11 @@ import com.fb.splitscreenlauncher.util.misc.asBitmap
 import com.fb.splitscreenlauncher.util.misc.asDrawable
 import com.fb.splitscreenlauncher.util.misc.scale
 import com.fb.splitscreenlauncher.util.misc.toPx
-import kotlinx.coroutines.*
-import java.util.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.util.Collections.sort
 
 
 class AppPickerFragment : PreferenceFragmentCompat() {
@@ -95,7 +98,7 @@ class AppPickerFragment : PreferenceFragmentCompat() {
         val mainIntent = Intent(Intent.ACTION_MAIN, null).addCategory(Intent.CATEGORY_LAUNCHER)
         val apps: MutableList<ResolveInfo> = pm.queryIntentActivities(mainIntent, 0)
 
-        Collections.sort(apps, ResolveInfo.DisplayNameComparator(pm))
+        sort(apps, ResolveInfo.DisplayNameComparator(pm))
 
         return apps
     }

@@ -59,7 +59,6 @@ class ServiceControllerImpl(val app: Application): ServiceController {
     override val launchState: LiveVar<Int> =  LiveVar(ServiceController.STATE_PAUSED)
 
     private var shortcut : Pair<Intent, Intent> = Intent() to Intent()
-
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
     val job = Job()
     private val scope = CoroutineScope(job + Dispatchers.Default)
@@ -119,6 +118,7 @@ class ServiceControllerImpl(val app: Application): ServiceController {
 
 
             // Cancel shortcut event after timeout
+            scope.cancel()
             scope.launch {
                 delay(4000L)
                 launchState.value = ServiceController.STATE_PAUSED
