@@ -26,6 +26,7 @@ import com.fb.splitscreenlauncher.R
 import com.fb.splitscreenlauncher.databinding.MainActivityBinding
 import com.fb.splitscreenlauncher.ui.settings.SettingsActivity
 import com.fb.splitscreenlauncher.ui.shortcut.ShortcutDialog
+import com.fb.splitscreenlauncher.util.BuildUtils
 import com.fb.splitscreenlauncher.util.misc.ActivityExt
 import com.fb.splitscreenlauncher.util.misc.launchUrl
 import com.fb.splitscreenlauncher.util.misc.versionName
@@ -73,6 +74,12 @@ class MainActivity: ActivityExt() {
                 true
             }
         }
+
+
+        text_msg.text = getString(when {
+            BuildUtils.AT_LEAST_9 -> R.string.msg_start_indicator_28
+            else -> R.string.msg_start_indicator
+        })
 
     }
 

@@ -25,7 +25,7 @@
 
 
     <!-- Main activity -->
-    <string name="action_create_shortcut">Create shortcut</string>
+    <string name="action_create_shortcut">Shortcut</string>
 
     <string name="action_app_theme">App theme</string>
     <string name="theme_system">Follow system</string>
@@ -43,7 +43,13 @@
     <string name="warning_same_app_shortcut">Launching the same app is not supported</string>
 
     <string name="msg_start_indicator">Tap the button bellow to create a shortcut on your home screen.
-        \n\nSome apps do not support window resizing and will not work in split screen mode.</string>
+        \n\nSome apps do not support window resizing and will not work in split screen mode.
+    </string>
+
+    <string name="msg_start_indicator_28">Tap the button bellow to create a shortcut on your home screen.
+        \n\nSome apps do not support window resizing and will not work in split screen mode.
+        \n\nOn Android 9+ the Accessibility service is no longer required. You may still enable Accessibility to launch the split-screen mode using the old method.
+    </string>
 
     <string name="dialog_new_label_hint">(Shortcut label)</string>
     <string name="dialog_new_top_app">Top app</string>
