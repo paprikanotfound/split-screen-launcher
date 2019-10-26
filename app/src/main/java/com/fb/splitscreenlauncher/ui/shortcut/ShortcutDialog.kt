@@ -130,7 +130,7 @@ class ShortcutDialog : DialogFragment() {
 
                     icon.setImageDrawable(
                         item.activityInfo?.loadIcon(context.packageManager) ?:
-                        context.getDrawable(R.drawable.ic_add_circle_black_24dp))
+                        context.getDrawable(R.drawable.ic_add_outline_24px))
 
                 }
                 onClick { index ->
