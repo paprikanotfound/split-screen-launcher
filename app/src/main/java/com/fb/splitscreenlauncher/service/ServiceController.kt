@@ -118,7 +118,6 @@ class ServiceControllerImpl(val app: Application): ServiceController {
 
 
             // Cancel shortcut event after timeout
-            scope.cancel()
             scope.launch {
                 delay(4000L)
                 launchState.value = ServiceController.STATE_PAUSED
