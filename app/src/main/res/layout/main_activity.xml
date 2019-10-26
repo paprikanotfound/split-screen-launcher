@@ -29,6 +29,7 @@
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/root"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -40,6 +41,7 @@
                 app:elevation="0dp">
 
             <FrameLayout
+                    android:id="@+id/layout_toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -65,6 +67,7 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -72,7 +75,7 @@
                 tools:context=".ui.main.MainActivity">
 
             <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/text_msg"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/msg_start_indicator"
