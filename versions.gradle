@@ -47,8 +47,8 @@ versions.testx = "1.1.1"
 versions.arch_core = "2.1.0"
 
 // publish
-versions.publish_version = "2.2"
-versions.publish_version_code = 7
+versions.publish_version = "2.3"
+versions.publish_version_code = 9
 
 ext.versions = versions
 
