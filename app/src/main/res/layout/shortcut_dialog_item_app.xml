@@ -37,7 +37,9 @@
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="?android:attr/textColorSecondary"
             android:ellipsize="marquee"
+            android:fontFamily="sans-serif-medium"
             />
 
     <LinearLayout
@@ -52,8 +54,8 @@
         <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_icon"
                 android:layout_margin="8dp"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 />
 
     </LinearLayout>

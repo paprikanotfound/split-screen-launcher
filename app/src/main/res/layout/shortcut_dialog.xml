@@ -43,12 +43,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/view_touch"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
                     android:paddingTop="32dp"
                     android:paddingBottom="32dp"
                     android:background="#0D818181"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -57,32 +57,33 @@
                         android:onClick="@{() -> viewModel.switchIconStyle()}"
                         android:src="@{viewModel.resultIcon}"
                         android:focusableInTouchMode="true"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
                         android:scaleType="centerInside"
                         android:layout_gravity="center"
                         android:elevation="2dp"
+                        android:layout_marginTop="2dp"
                         />
 
-                <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/edit_name"
-                        android:hint="@{viewModel.labelHint}"
-                        android:text="@={viewModel.customUserLabel}"
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        app:hintTextColor="?attr/colorAccent"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_gravity="center_horizontal"
-                        android:gravity="center_horizontal"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="?android:attr/textColorSecondary"
-                        android:textSize="18sp"
-                        android:maxLines="1"
-                        android:inputType="text"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp"
-                        />
+                        android:layout_height="wrap_content"
+                        android:hint="@{viewModel.labelHint}"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edit_name"
+                            android:text="@={viewModel.customUserLabel}"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
 
             </LinearLayout>
 
@@ -90,6 +91,7 @@
                     android:id="@+id/recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:overScrollMode="never"
                     />
 
         </LinearLayout>
