@@ -20,6 +20,7 @@ package com.fb.splitscreenlauncher.ui.shortcut
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.provider.Settings
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.callbacks.onDismiss
@@ -29,13 +30,14 @@ import com.fb.splitscreenlauncher.util.Parameters
 import com.fb.splitscreenlauncher.util.SplitScreenModeUtil
 import com.fb.splitscreenlauncher.util.misc.ActivityExt
 import com.fb.splitscreenlauncher.util.misc.isAccessibilityEnabled
+import com.fb.splitscreenlauncher.util.misc.ld
 import com.fb.splitscreenlauncher.util.misc.toast
 
 
 class ShortcutActivity: ActivityExt() {
 
-    override fun onResume() {
-        super.onResume()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         when {
             intent?.action == Intent.ACTION_CREATE_SHORTCUT -> {
@@ -46,6 +48,15 @@ class ShortcutActivity: ActivityExt() {
                 })
 
             }
+        }
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        when {
+            intent?.action == Intent.ACTION_CREATE_SHORTCUT -> return
             isAccessibilityEnabled(ServiceAccessibility::class.java) -> {
 
                 Intent(baseContext, ServiceAccessibility::class.java)
